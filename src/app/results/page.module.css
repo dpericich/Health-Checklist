@@ -1,0 +1,28 @@
+.checklistResultsContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInputButton {
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 25px;
+  }
+  
+  .userInputButton:hover,
+  .userInputButton:active {
+    background-color: white;
+    color: black;
+  }
+  
+  .userInputButton:active {
+    transition: transform 0.4s;
+    transform: translateY(5px);
+  } 
