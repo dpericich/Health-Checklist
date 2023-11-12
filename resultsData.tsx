@@ -1,3 +1,5 @@
+// sex --> age --> mvp points, appts/screenings, DI, health indicators
+
 export const dataMen = [
     {
       cohort: 'man20',
