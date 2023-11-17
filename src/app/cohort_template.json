@@ -1,0 +1,69 @@
+{
+    "age": "20-30",
+    "sex": "Male", 
+    "summary": {
+        "description": "This will be 150 characters",
+        "keyPoints": [
+            "point 1",
+            "point 2",
+            "point 3"
+        ]
+    },  
+    "healthMarkers": [
+        {
+            "type": "cardiovascular",
+            "markers": {
+                "bloodPressure": 10,
+                "familyHistory": "good"
+            }
+        },
+        {
+            "type": "physical",
+            "markers": {
+                "bodyMassIndex": 5,
+                "stepsPerDay":  10000,
+                "averageMileTime": "4:20"
+            }
+        },
+        {
+            "type": "mental / neurological",
+            "markers": {
+
+            }
+        },
+        {
+            "type": "flexibility",
+            "markers": {
+                "backFlexiblity": "range of motion in degrees?",
+                "hipFlexibility": "range of motion in degrees?",
+                "lowerBodyFlexibiltiy": "range of motion in degrees?",
+                "upperBodyFlexibility": "range of motion in degrees?"
+            }
+        }
+    ],
+    "appointments": {
+        "doctorCheckups": [
+            "appointment 1",
+            "appointment 2",
+            "appointment 3",
+            "screening 1",
+            "screening 2"
+        ],
+        "dentalCheckups": [
+            "appointment 1",
+            "appointment 2"
+        ]
+    },
+    "degradation": [
+        {
+            "name": "",
+            "text": "",
+            "bulletPoints": []
+        },
+        {
+            "name": "",
+            "text": "",
+            "bulletPoints": []
+        }
+    ]
+}
