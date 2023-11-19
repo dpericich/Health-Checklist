@@ -13,31 +13,27 @@
         {
             "type": "cardiovascular",
             "markers": {
-                "bloodPressure": 10,
-                "familyHistory": "good"
+                "bloodPressure": "110/80",
+                "restingHeartRate": "60bpm",
+                "heartRateVariability": "45"
             }
         },
         {
             "type": "physical",
             "markers": {
-                "bodyMassIndex": 5,
-                "stepsPerDay":  10000,
-                "averageMileTime": "4:20"
-            }
-        },
-        {
-            "type": "mental / neurological",
-            "markers": {
-
+                "bodyMassIndex": 5, // tooltip explaining what this is & limitiations
+                "activeMinutesWeek":  150,   // have a struct for zone 2, high intesity minutes, strength training minutes
+                "averageMileTime": "7-8 mins", // kilometers as well
+                "pushUps": 25
             }
         },
         {
             "type": "flexibility",
             "markers": {
-                "backFlexiblity": "range of motion in degrees?",
-                "hipFlexibility": "range of motion in degrees?",
-                "lowerBodyFlexibiltiy": "range of motion in degrees?",
-                "upperBodyFlexibility": "range of motion in degrees?"
+                "deepSquat": "All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
+                "toeTouch": "All the way/ half way/ barely anything",
+                "twist": "All the way/ half way/ barely anything",
+                "HandsOverHead": "arm straight up/extend back no discomfort"
             }
         }
     ],
@@ -56,12 +52,12 @@
     },
     "degradation": [
         {
-            "name": "",
+            "name": "Key Lookouts",
             "text": "",
             "bulletPoints": []
         },
         {
-            "name": "",
+            "name": "Longevity info",
             "text": "",
             "bulletPoints": []
         }
