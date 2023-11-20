@@ -1,28 +1,77 @@
 .checklistResultsContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.topRow {
+  display: flex;
+  border: 2pt solid rgb(207, 207, 207);
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.topRowColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1pt solid rgb(207, 207, 207);
+  border-radius: 0.3rem;
+  width: 50%;
+  padding: 10px;
+}
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2pt solid rgb(207, 207, 207);
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.statsRow {
+  display: flex;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.contentRow {
+  display: flex;
+  flex-direction: column;
+  border: 2pt solid rgb(207, 207, 207);
+  border-radius: 0.3rem;
+  gap: 0.5rem;
+  padding: 20px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .userInputButton {
-    max-width: 300px;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    margin: 1rem;
-    border: 1px solid white;
-    border-radius: 25px;
-  }
-  
-  .userInputButton:hover,
-  .userInputButton:active {
-    background-color: white;
-    color: black;
-  }
-  
-  .userInputButton:active {
-    transition: transform 0.4s;
-    transform: translateY(5px);
-  } 
+  max-width: 300px;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.userInputButton:hover,
+.userInputButton:active {
+  background-color: white;
+  color: black;
+}
+
+.userInputButton:active {
+  transition: transform 0.4s;
+  transform: translateY(5px);
+}

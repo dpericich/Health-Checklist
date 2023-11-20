@@ -7,6 +7,29 @@
   height: 100vh;
 }
 
+.pageHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2pt solid white;
+  border-radius: 0.25rem;
+  padding: 20px;
+}
+.formInput {
+  padding: 2px;
+  margin-bottom: 7px;
+}
+
 .userInputButton {
   max-width: 300px;
   text-align: center;
@@ -25,4 +48,4 @@
 .userInputButton:active {
   transition: transform 0.4s;
   transform: translateY(5px);
-} 
+}
