@@ -63,3 +63,71 @@
         }
     ]
 }
+
+{
+    "age": "40-59",
+    "sex": "Female", 
+    "summary": {
+        "description": "This will be 150 characters",
+        "keyPoints": [
+            "point 1",
+            "point 2",
+            "point 3"
+        ]
+    },  
+    "healthMarkers": [
+        {
+            "type": "cardiovascular",
+            "markers": {
+                "bloodPressureAvg": "112/68 - 133/81, avg: 124/75",
+                "restingHeartRate": "71-78 BPM",
+                "heartRateVariability": "50-60"
+            }
+        },
+        {
+            "type": "physical",
+            "markers": {
+                "bodyMassIndex": "24-36 with an average of 29", // tooltip explaining what this is & limitiations
+                "activeMinutesWeek":  "150 minutes per week",
+                "strengthTraining": "2 sessions per week",   // have a struct for zone 2, high intesity minutes, strength training minutes
+                "averageMileTime": "12:00 - 14:00 minutes", // kilometers as well
+                "averageKiloTime": "7:00 - 8:30 minutes",
+                "pushUps": "7-14 bent knee pushups"
+            }
+        },
+        {
+            "type": "flexibility",
+            "markers": {
+                "deepSquat": "All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
+                "toeTouch": "All the way/ half way/ barely anything",
+                "twist": "All the way/ half way/ barely anything",
+                "HandsOverHead": "arm straight up/extend back no discomfort"
+            }
+        }
+    ],
+    "appointments": {
+        "doctorCheckups": [
+            "appointment 1",
+            "appointment 2",
+            "appointment 3",
+            "screening 1",
+            "screening 2"
+        ],
+        "dentalCheckups": [
+            "appointment 1",
+            "appointment 2"
+        ]
+    },
+    "degradation": [
+        {
+            "name": "Key Lookouts",
+            "text": "",
+            "bulletPoints": []
+        },
+        {
+            "name": "Longevity info",
+            "text": "",
+            "bulletPoints": []
+        }
+    ]
+}
