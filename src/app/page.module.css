@@ -41,8 +41,8 @@
 
 .userInputButton:hover,
 .userInputButton:active {
-  background-color: white;
-  color: black;
+  background-color: var(--tertiary-font-color);
+  color: var(--primary-font-color);
 }
 
 .userInputButton:active {
