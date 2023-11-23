@@ -15,6 +15,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  /* Adding in Color Palette */
+  --primary-background-color: #F4F1DE;
+  --secondary-background-color: #F2CC8F;
+  --primary-font-color: #3D405B;
+  --secondary-font-color: #81B29A;
+  --tertiary-font-color: #E07A5F;
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -51,6 +58,13 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+     /* Adding in Color Palette */
+    --primary-background-color: #F4F1DE;
+    --secondary-background-color: #F2CC8F;
+    --primary-font-color: #3D405B;
+    --secondary-font-color: #81B29A;
+    --tertiary-font-color: #E07A5F;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
