@@ -107,13 +107,9 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: var(--primary-background-color);
+    color: var(--primary-font-color);
+    border-color: var(--tertiary-font-color);
 }
 
 a {
