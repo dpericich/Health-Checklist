@@ -2,6 +2,7 @@ import Link from '../../../node_modules/next/link'
 import CategoryContainer from './categoryContainer'
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
+import healthData from '../cohort_template';
 
 // eventually we can break this up into separate components if that makes sense, for now I've just framed some spaces out and inserted placeholder content. We can also refactor some of the redundant blocks (icon columns) once we start to finalize a layout to clean up the code a bit.
 
