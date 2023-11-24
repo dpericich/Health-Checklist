@@ -1,4 +1,5 @@
 import Link from '../../node_modules/next/link'
+import LinkButton from '../components/linkButton';
 import styles from './page.module.css'
 
 export default function Home() {
@@ -33,10 +34,7 @@ export default function Home() {
             <option value="Female">Female</option>
           </select>
         </div>
-        {/* Need to have better CTA text for this button */}
-        <Link href="/results">
-          <div className={styles.userInputButton}>Show Results</div>
-        </Link>
+        <LinkButton link={"/results"} disabled={true} text={"Get Results"} />
       </form>
     </div>
   )
