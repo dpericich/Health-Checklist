@@ -1,8 +1,13 @@
-import Link from '../../node_modules/next/link'
+'use client'
+
+import { useState, useEffect } from 'react';
 import LinkButton from '../components/linkButton';
 import styles from './page.module.css'
 
 export default function Home() {
+  const [disabled, setDisabled] = useState(true);
+  const [ageGroup, setAgeGroup] = useState("");
+  const [gender, setGender] = useState("");
   return (
     <div className={styles.userInputContainer}>
       <div className={styles.pageHeading}>
@@ -34,7 +39,7 @@ export default function Home() {
             <option value="Female">Female</option>
           </select>
         </div>
-        <LinkButton link={"/results"} disabled={true} text={"Get Results"} />
+        <LinkButton link={"/results"} disabled={disabled} text={"Get Results"} />
       </form>
     </div>
   )
