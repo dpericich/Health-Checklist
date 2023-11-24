@@ -30,7 +30,8 @@
         {
             "type": "flexibility",
             "markers": {
-                "deepSquat": "All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
+                "squatRepTest": {"average": "27-29 reps", "aboveAverage": "30-32 reps", "excellent": ">34 reps"}, //"All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
+                "sitAndReach": {"average": "17.5 in", "aboveAverage": "19.5 in", "excellent": "21.5 in"},
                 "toeTouch": "All the way/ half way/ barely anything",
                 "twist": "All the way/ half way/ barely anything",
                 "HandsOverHead": "arm straight up/extend back no discomfort"
