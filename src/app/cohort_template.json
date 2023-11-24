@@ -31,10 +31,10 @@
             "type": "flexibility",
             "markers": {
                 "squatRepTest": {"average": "27-29 reps", "aboveAverage": "30-32 reps", "excellent": ">34 reps"}, //"All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
-                "sitAndReach": {"average": "17.5 in", "aboveAverage": "19.5 in", "excellent": "21.5 in"},
-                "toeTouch": "All the way/ half way/ barely anything",
-                "twist": "All the way/ half way/ barely anything",
-                "HandsOverHead": "arm straight up/extend back no discomfort"
+                "sitAndReach": {"average": "17.5 in", "aboveAverage": "19.5 in", "excellent": "21.5 in"}
+                // "toeTouch": "All the way/ half way/ barely anything",
+                // "twist": "All the way/ half way/ barely anything",
+                // "HandsOverHead": "arm straight up/extend back no discomfort"
             }
         }
     ],
@@ -99,10 +99,11 @@
         {
             "type": "flexibility",
             "markers": {
-                "deepSquat": "All the way/ half way/ barely anything", //step 2 : explaining the detriment of these not being where they should be
-                "toeTouch": "All the way/ half way/ barely anything",
-                "twist": "All the way/ half way/ barely anything",
-                "HandsOverHead": "arm straight up/extend back no discomfort"
+                "squatRepTest": {"average": "15-17 reps", "aboveAverage": "18-20 reps", "excellent": ">23 reps"}, //step 2 : explaining the detriment of these not being where they should be
+                "sitAndReach": {"average": "17.5 in", "aboveAverage": "19.0 in", "excellent": "20.5 in"},
+                
+                // "twist": "All the way/ half way/ barely anything",
+                // "HandsOverHead": "arm straight up/extend back no discomfort"
             }
         }
     ],
