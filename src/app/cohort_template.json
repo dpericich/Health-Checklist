@@ -114,15 +114,17 @@
     ],
     "appointments": {
         "doctorCheckups": [
-            "appointment 1",
-            "appointment 2",
-            "appointment 3",
-            "screening 1",
-            "screening 2"
+            "Annual PCP Appointment",
+            "Blood Pressure Screening",
+            "Cholesterol Screening",
+            "Diabetes Screening",
+            "Breast Cancer Screening",
+            "Cervical Cancer Screening",
+            "Colorectal Cancer Screening",
+            "Eye Exam"
         ],
         "dentalCheckups": [
-            "appointment 1",
-            "appointment 2"
+            "Annual Dental Appointment",
         ]
     },
     "degradation": [
