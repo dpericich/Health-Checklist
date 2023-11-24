@@ -2,7 +2,7 @@
     "age": "20-30",
     "sex": "Male", 
     "summary": {
-        "description": "This will be 150 characters",
+        "description": "",
         "keyPoints": [
             "point 1",
             "point 2",
@@ -69,11 +69,12 @@
     "age": "40-59",
     "sex": "Female", 
     "summary": {
-        "description": "This will be 150 characters",
+        "description": "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.
+        ",
         "keyPoints": [
-            "point 1",
-            "point 2",
-            "point 3"
+            "Bone density starts to decrease .5%/.per year.",
+            "Unintentional weight gain and lean muscle loss.",
+            "Hormonal imbalances may negatively affect mood and sleep."
         ]
     },  
     "healthMarkers": [
