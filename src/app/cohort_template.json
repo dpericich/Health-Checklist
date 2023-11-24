@@ -80,7 +80,8 @@
         {
             "type": "cardiovascular",
             "markers": {
-                "bloodPressureAvg": "112/68 - 133/81, avg: 124/75",
+                "bloodPressureAvg": "124/75",
+                "bloodPressureRange": "112/68 - 133/81",
                 "restingHeartRate": "71-78 BPM",
                 "heartRateVariability": "50-60"
             }
@@ -88,12 +89,16 @@
         {
             "type": "physical",
             "markers": {
-                "bodyMassIndex": "24-36 with an average of 29", // tooltip explaining what this is & limitiations
-                "activeMinutesWeek":  "150 minutes per week",
-                "strengthTraining": "2 sessions per week",   // have a struct for zone 2, high intesity minutes, strength training minutes
-                "averageMileTime": "12:00 - 14:00 minutes", // kilometers as well
-                "averageKiloTime": "7:00 - 8:30 minutes",
-                "pushUps": "7-14 bent knee pushups"
+                "bodyMassIndexRange": "24-36",
+                "bodyMassIndexAvg": "29", // tooltip explaining what this is & limitiations
+                "activeMinutesWeek":  "150", // minutes per week
+                "strengthTraining": "2",   // sessions per week
+                "averageMileRange": "12:00 - 14:00", // minutes
+                "averageMileTime": "13:00",
+                "averageKiloRange": "7:00 - 8:30",
+                "averageKiloTime": "7:45",
+                "pushUps": "7-14", // bent knee
+                "pushUpsAvg": "10"
             }
         },
         {
@@ -123,13 +128,19 @@
     "degradation": [
         {
             "name": "Key Lookouts",
-            "text": "",
-            "bulletPoints": []
+            "text": "The most impactful diseases to lookout for are depression, cardiovascular disease. These are associated with a 2x chance of significantly decreased health. The worst behavior for risk of poor health outcomes is smoking at your age.\n\n
+            
+            In short, lookout for:",
+            "bulletPoints": ["Cardiovascular health", "Depression", "Smoking"]
         },
         {
             "name": "Longevity info",
-            "text": "",
-            "bulletPoints": []
+            "text": "Bone density and breast cancer carry your greatist risk for deteriorating your quality of life or increasing mortatlity rate. Make sure you're lifting weights and getting mammograms at regular intervals over these two decades.\n\n
+            
+            Most people by 50 cannot twist at all. Make sure you are doing what you can to train your ability to twist. Balance is also very important at your age, as your greatest risk for poor health outcomes from accidents come from falling once you get past your 50s.\n\n
+
+            In short, lookout for:",
+            "bulletPoints": ["Bone Density", "Breast Cancer", "Twist Flexibility", "Balance"]
         }
     ]
 }
