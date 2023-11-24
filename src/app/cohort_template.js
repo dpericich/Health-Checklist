@@ -1,4 +1,4 @@
-{
+const healthData = {
     "male_20_30": {
         "age": "20-30",
         "sex": "Male", 
@@ -170,4 +170,6 @@
             }
         ]
     }
-}
+};
+
+export default healthData;
