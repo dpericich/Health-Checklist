@@ -28,7 +28,7 @@ export default function Home() {
           {/* Maybe I extract these values out to a data file */}
           {/* How do I not allow user to select default option in a dropdown? */}
           <select name="age-range" id="age-range" onChange={(e) => setAgeGroup(e.target.value)}>
-            <option value="">Your Age Range</option>
+            <option value="" disabled selected>Your Age Range</option>
             <option value="18-25">18 - 25</option>
             <option value="26-35">26 - 35</option>
             <option value="36-45">36 - 45</option>
@@ -42,7 +42,7 @@ export default function Home() {
         <div className={styles.formInput}>
           <span>Select Your Gender:</span>
           <select name="gender" id="gender" onChange={(e) => setGender(e.target.value)}>
-            <option value="">Select Gender</option>
+            <option value="" disabled selected>Select Gender</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
