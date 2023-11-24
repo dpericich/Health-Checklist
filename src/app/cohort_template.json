@@ -69,8 +69,7 @@
         "age": "40-59",
         "sex": "Female", 
         "summary": {
-            "description": "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.
-            ",
+            "description": "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
             "keyPoints": [
                 "Bone density starts to decrease .5%/.per year.",
                 "Unintentional weight gain and lean muscle loss.",
@@ -90,16 +89,46 @@
             {
                 "type": "physical",
                 "markers": {
-                    "bodyMassIndexRange": "24-36",
-                    "bodyMassIndexAvg": "29", // tooltip explaining what this is & limitiations
-                    "activeMinutesWeek":  "150", // minutes per week
-                    "strengthTraining": "2",   // sessions per week
-                    "averageMileRange": "12:00 - 14:00", // minutes
-                    "averageMileTime": "13:00",
-                    "averageKiloRange": "7:00 - 8:30",
-                    "averageKiloTime": "7:45",
-                    "pushUps": "7-14", // bent knee
-                    "pushUpsAvg": "10"
+                    "bodyMassIndexRange": {
+                        "value": "24-36",
+                        "tooltip": ""
+                    },
+                    "bodyMassIndexAvg": {
+                        "value": "29",
+                        "tooltip": "tooltip explaining what this is & limitiations"
+                    },
+                    "activeMinutesWeek":  {
+                        "value":"150",
+                        "tooltip": "minutes per week"
+                    },
+                    "strengthTraining": {
+                        "value": "2",
+                        "tooltip": "sessions per week"
+                    },
+                    "averageMileRange": { 
+                        "value": "12:00 - 14:00",
+                        "tooltip": "minutes"
+                    },
+                    "averageMileTime": {
+                        "value": "13:00",
+                        "tooltip": ""
+                    },
+                    "averageKiloRange": {
+                        "value": "7:00 - 8:30",
+                        "tooltip": ""
+                    },
+                    "averageKiloTime": {
+                        "value": "7:45",
+                        "tooltip": ""
+                    },
+                    "pushUps": {
+                        "value": "7-14", 
+                        "tooltip": "bent knee"
+                    },
+                    "pushUpsAvg": { 
+                        "value": "10",
+                        "tooltip": ""
+                    }
                 }
             },
             {
@@ -131,18 +160,12 @@
         "degradation": [
             {
                 "name": "Key Lookouts",
-                "text": "The most impactful diseases to lookout for are depression, cardiovascular disease. These are associated with a 2x chance of significantly decreased health. The worst behavior for risk of poor health outcomes is smoking at your age.\n\n
-                
-                In short, lookout for:",
+                "text": "The most impactful diseases to lookout for are depression, cardiovascular disease. These are associated with a 2x chance of significantly decreased health. The worst behavior for risk of poor health outcomes is smoking at your age.\n\n In short, lookout for:",
                 "bulletPoints": ["Cardiovascular health", "Depression", "Smoking"]
             },
             {
                 "name": "Longevity info",
-                "text": "Bone density and breast cancer carry your greatist risk for deteriorating your quality of life or increasing mortatlity rate. Make sure you're lifting weights and getting mammograms at regular intervals over these two decades.\n\n
-                
-                Most people by 50 cannot twist at all. Make sure you are doing what you can to train your ability to twist. Balance is also very important at your age, as your greatest risk for poor health outcomes from accidents come from falling once you get past your 50s.\n\n
-
-                In short, lookout for:",
+                "text": "Bone density and breast cancer carry your greatist risk for deteriorating your quality of life or increasing mortatlity rate. Make sure you're lifting weights and getting mammograms at regular intervals over these two decades.\n\n Most people by 50 cannot twist at all. Make sure you are doing what you can to train your ability to twist. Balance is also very important at your age, as your greatest risk for poor health outcomes from accidents come from falling once you get past your 50s.\n\n In short, lookout for:",
                 "bulletPoints": ["Bone Density", "Breast Cancer", "Twist Flexibility", "Balance"]
             }
         ]
