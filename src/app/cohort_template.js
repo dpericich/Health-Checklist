@@ -79,12 +79,20 @@ const healthData = {
         "healthMarkers": [
             {
                 "type": "cardiovascular",
-                "markers": {
-                    "bloodPressureAvg": "124/75",
-                    "bloodPressureRange": "112/68 - 133/81",
-                    "restingHeartRate": "71-78 BPM",
-                    "heartRateVariability": "50-60"
-                }
+                "markers": [
+                    {"name": "bloodPressureAvg", 
+                    "value": "124/75", 
+                    "tooltip": ""},
+                    {"name": "bloodPressureRange", 
+                    "value": "124/75", 
+                    "tooltip": ""},
+                    {"name": "restingHeartRate", 
+                    "value": "124/75", 
+                    "tooltip": ""},
+                    {"name": "heartRateVariability", 
+                    "value": "124/75", 
+                    "tooltip": ""}
+                ]
             },
             {
                 "type": "physical",
