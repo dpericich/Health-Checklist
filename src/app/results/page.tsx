@@ -1,5 +1,6 @@
 import Link from '../../../node_modules/next/link'
 import CategoryContainer from './categoryContainer'
+import LinkButton from '../../components/linkButton';
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import healthData from '../cohort_template';
@@ -62,9 +63,7 @@ export default function Results() {
         <h2>Interactive Links/Buttons</h2>
         <p>Potential space for accordian, tabs, buttons etc.</p>
       </div>
-      <Link href="/">
-        <div className={styles.userInputButton}>Update Inputs</div>
-      </Link>
+      <LinkButton link={"/"} disabled={false} text={"Update Inputs"} />
     </div>
   )
 }
