@@ -1,5 +1,3 @@
-import Link from '../../../node_modules/next/link'
-import CategoryContainer from './categoryContainer'
 import LinkButton from '../../components/linkButton';
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
