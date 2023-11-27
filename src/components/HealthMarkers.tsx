@@ -1,0 +1,53 @@
+// maps over 'healthMarkers' array
+// 1. checks 'type' to render icon and heading
+// 2. renders 'MarkerList' component, which will render individual cards
+
+// had to reformat data a little bit to optimize. 'healthMarkers' is an array of objects. Each object has a 'type' key that allows us to map all 3. The individual 'markers' data within each type is another array that we can esaily map through to render data.
+
+'use client'
+import healthData from '@/app/cohort_template'
+import styles from '../app/results/page.module.css'
+import MarkerList from './MarkerList'
+import { FaHeartbeat } from 'react-icons/fa'
+import { FaDumbbell } from 'react-icons/fa6'
+import { TbStretching } from 'react-icons/tb'
+
+const HealthMarkers = () => {
+  const { healthMarkers } = healthData['female_40_59']
+
+  return (
+    <div className={styles.markersContainer}>
+      {healthMarkers.map((item, i) => {
+        return (
+          <div className={styles.listsContainer} key={i}>
+            <div className={styles.listHeader}>
+              {/* CHECKS TYPE ---------------------------- */}
+              {item.type === 'cardiovascular' ? (
+                <>
+                  <FaHeartbeat style={{ fontSize: '40px' }} />
+                  <h1>{item.type}</h1>
+                </>
+              ) : item.type === 'physical' ? (
+                <>
+                  <FaDumbbell style={{ fontSize: '40px' }} />
+                  <h1>{item.type}</h1>
+                </>
+              ) : item.type === 'flexibility' ? (
+                <>
+                  <TbStretching style={{ fontSize: '40px' }} />
+                  <h1>{item.type}</h1>
+                </>
+              ) : (
+                <span></span>
+              )}
+            </div>
+            {/* RENDERS MARKERLIST ------------------------ */}
+            <MarkerList data={item} />
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+export default HealthMarkers
