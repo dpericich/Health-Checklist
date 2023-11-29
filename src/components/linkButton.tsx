@@ -15,7 +15,7 @@ interface ButtonProps {
 const EnabledButton = ({ link, text }: ButtonProps) => {
     return(
         <Link href={link || "/"}>
-        <div className={styles.userInputButton}>{text}</div>
+            <div className={styles.userInputButton}>{text}</div>
         </Link>
     );
 };
