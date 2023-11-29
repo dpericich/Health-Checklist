@@ -39,7 +39,7 @@ export default function Home() {
             { genders.map(g => <option value={g} key={g}>{formatGenderName(g)}</option>) }
           </select>
         </div>
-        <LinkButton link={"/results"} disabled={disabled} text={"Get Results"} />
+        <LinkButton link={`/results?age=${ageGroup}&gender=${gender}`} disabled={disabled} text={"Get Results"} />
       </form>
     </div>
   )
