@@ -1,11 +1,30 @@
+'use client'
+import { useEffect, useState } from 'react';
 import LinkButton from '../../components/linkButton';
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import healthData from '../cohort_template';
+import { usePathname, useSearchParams } from '../../../node_modules/next/navigation';
 
-// eventually we can break this up into separate components if that makes sense, for now I've just framed some spaces out and inserted placeholder content. We can also refactor some of the redundant blocks (icon columns) once we start to finalize a layout to clean up the code a bit.
+const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
+  const formattedAgeGroup = ageGroup.replace('-', '_');
+  const ageGenderKey = gender + '_' + formattedAgeGroup;
+  return ageGenderKey;
+}
 
 export default function Results() {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [dataKey, setDataKey] = useState("");
+
+  useEffect(() => {
+    const age = searchParams.get('age');
+    const gender = searchParams.get('gender');
+    const computedDataKey = formatAgeGenderKey(age, gender);
+    setDataKey(computedDataKey);
+  }, [])
+
+
   return (
     // I want to add basic accordian items here
     <div className={styles.checklistResultsContainer}>
