@@ -13,25 +13,18 @@ import { FaHeartbeat } from 'react-icons/fa'
 import { FaDumbbell } from 'react-icons/fa6'
 import { TbStretching } from 'react-icons/tb'
 
+const iconMappings = {
+  physical: <FaDumbbell />,
+  cardiovascular: <FaHeartbeat />,
+  flexibility: <TbStretching />,
+}
+
 const MarkerModal = ({ openMarker, onClose, item }: any) => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalContent}>
-        {item.type === 'cardiovascular' ? (
-          <>
-            <FaHeartbeat style={{ fontSize: '100px' }} />
-          </>
-        ) : item.type === 'physical' ? (
-          <>
-            <FaDumbbell style={{ fontSize: '100px' }} />
-          </>
-        ) : item.type === 'flexibility' ? (
-          <>
-            <TbStretching style={{ fontSize: '100px' }} />
-          </>
-        ) : (
-          <span></span>
-        )}
+        <div style={{ fontSize: '100px' }}>{iconMappings[`${item.type}`]}</div>
+
         <p className={styles.modalHeading}>{item.name}</p>
         <p className={styles.modalBody}>{item.value}</p>
         <p>{item.comment}</p>

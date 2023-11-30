@@ -15,34 +15,67 @@
   gap: 0.75rem;
   margin-bottom: 20px;
 }
+.heading {
+  font-size: 40pt;
+}
+.randomQuote {
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 50px;
+  box-shadow: inset 2px 2px 5px rgb(152, 152, 152);
+  border-radius: 0.3rem;
+  background-color: white;
+  font-size: 14pt;
+}
 
 .formContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2pt solid var(--tertiary-font-color);
-  border-radius: 0.25rem;
-  padding: 20px;
+
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.3rem;
+  padding: 40px 20px 40px 20px;
+  width: 60%;
+  box-shadow: 2px 2px 10px rgb(210, 210, 210);
 }
 .formInput {
-  padding: 2px;
-  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 18pt;
+  padding: 3px;
+  margin-bottom: 40px;
+  border-bottom: 2pt solid gray;
+}
+.select {
+  background-color: white;
+  color: var(--primary-font-color);
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .userInputButton {
-  max-width: 300px;
+  /* max-width: 300px; */
   text-align: center;
   padding: 1rem 1.5rem;
   margin: 1rem;
-  border: 1px solid var(--tertiary-font-color);
-  border-radius: 25px;
+  background-color: var(--secondary-font-color);
+  border: 2pt solid transparent;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .userInputButton:hover,
 .userInputButton:active {
-  background-color: var(--tertiary-font-color);
+  transition: 0.3s ease;
+  transform: scale(1.1);
+  background-color: white;
   color: var(--primary-font-color);
+  border: 2pt solid var(--secondary-font-color);
 }
 
 .userInputButton:active {

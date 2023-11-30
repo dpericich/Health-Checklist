@@ -12,6 +12,12 @@ import { FaHeartbeat } from 'react-icons/fa'
 import { FaDumbbell } from 'react-icons/fa6'
 import { TbStretching } from 'react-icons/tb'
 
+const iconMappings = {
+  physical: <FaDumbbell />,
+  cardiovascular: <FaHeartbeat />,
+  flexibility: <TbStretching />,
+}
+
 const HealthMarkers = () => {
   const { healthMarkers } = healthData['female_40_59']
 
@@ -21,25 +27,11 @@ const HealthMarkers = () => {
         return (
           <div className={styles.listsContainer} key={i}>
             <div className={styles.listHeader}>
-              {/* CHECKS TYPE ---------------------------- */}
-              {item.type === 'cardiovascular' ? (
-                <>
-                  <FaHeartbeat style={{ fontSize: '40px' }} />
-                  <h1>{item.type}</h1>
-                </>
-              ) : item.type === 'physical' ? (
-                <>
-                  <FaDumbbell style={{ fontSize: '40px' }} />
-                  <h1>{item.type}</h1>
-                </>
-              ) : item.type === 'flexibility' ? (
-                <>
-                  <TbStretching style={{ fontSize: '40px' }} />
-                  <h1>{item.type}</h1>
-                </>
-              ) : (
-                <span></span>
-              )}
+              <div style={{ fontSize: '40px' }}>
+                {iconMappings[`${item.type}`]}
+              </div>
+
+              <h1>{item.type}</h1>
             </div>
             {/* RENDERS MARKERLIST ------------------------ */}
             <MarkerList data={item} />
