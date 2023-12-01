@@ -57,28 +57,3 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-
-.userInputButton {
-  /* max-width: 300px; */
-  text-align: center;
-  padding: 1rem 1.5rem;
-  margin: 1rem;
-  background-color: var(--secondary-font-color);
-  border: 2pt solid transparent;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.userInputButton:hover,
-.userInputButton:active {
-  transition: 0.3s ease;
-  transform: scale(1.1);
-  background-color: white;
-  color: var(--primary-font-color);
-  border: 2pt solid var(--secondary-font-color);
-}
-
-.userInputButton:active {
-  transition: transform 0.4s;
-  transform: translateY(5px);
-}
