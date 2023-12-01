@@ -1,60 +1,57 @@
 'use client'
-import { useEffect, useState } from 'react';
-import LinkButton from '../../components/linkButton';
+import { useEffect, useState } from 'react'
+import LinkButton from '../../components/linkButton'
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
-import healthData from '../cohort_template';
-import { usePathname, useSearchParams } from '../../../node_modules/next/navigation';
+import healthData from '../cohort_template'
+import {
+  usePathname,
+  useSearchParams,
+} from '../../../node_modules/next/navigation'
+import HealthMarkers from '@/components/HealthMarkers'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
-  const formattedAgeGroup = ageGroup.replace('-', '_');
-  const ageGenderKey = gender + '_' + formattedAgeGroup;
-  return ageGenderKey;
+  const formattedAgeGroup = ageGroup.replace('-', '_')
+  const ageGenderKey = gender + '_' + formattedAgeGroup
+  return ageGenderKey
 }
 
 export default function Results() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const [dataKey, setDataKey] = useState("");
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const [dataKey, setDataKey] = useState('')
 
   useEffect(() => {
-    const age = searchParams.get('age');
-    const gender = searchParams.get('gender');
-    const computedDataKey = formatAgeGenderKey(age, gender);
-    setDataKey(computedDataKey);
+    const age = searchParams.get('age')
+    const gender = searchParams.get('gender')
+    const computedDataKey = formatAgeGenderKey(age, gender)
+    setDataKey(computedDataKey)
   }, [])
-
 
   return (
     // I want to add basic accordian items here
     <div className={styles.checklistResultsContainer}>
       <h1>Health Checklist Results</h1>
-      {/* <CategoryContainer /> */}
       <div className={styles.topRow}>
         <div className={styles.topRowColumn}>
           <IoPersonCircleSharp style={{ fontSize: '100pt' }} />
           {/* TEST CODE for accessing the objects */}
-          {healthData["female_40_59"]["healthMarkers"][0]["markers"].map((point) => {
-            return <p>{point["name"]} - {point["value"]}</p>
-          })}
+          {healthData['female_40_59']['healthMarkers'][0]['markers'].map(
+            point => {
+              return (
+                <p>
+                  {point['name']} - {point['value']}
+                </p>
+              )
+            }
+          )}
         </div>
         <div className={styles.topRowColumn}>GENDER AGE</div>
       </div>
       <div className={styles.statsContainer}>
-        <h3>Heading - potential space for stats, icons, visual egagement</h3>
+        <h1 className={styles.healthMarkersHeading}>Health Markers</h1>
         <div className={styles.statsRow}>
-          <div className={styles.topRowColumn}>
-            <IoPersonCircleSharp style={{ fontSize: '50pt' }} />
-            Label/stat
-          </div>
-          <div className={styles.topRowColumn}>
-            <IoPersonCircleSharp style={{ fontSize: '50pt' }} />
-            Label/stat
-          </div>
-          <div className={styles.topRowColumn}>
-            <IoPersonCircleSharp style={{ fontSize: '50pt' }} />
-            Label/stat
-          </div>
+          <HealthMarkers />
         </div>
       </div>
 
@@ -80,7 +77,7 @@ export default function Results() {
         <h2>Interactive Links/Buttons</h2>
         <p>Potential space for accordian, tabs, buttons etc.</p>
       </div>
-      <LinkButton link={"/"} disabled={false} text={"Update Inputs"} />
+      <LinkButton link={'/'} disabled={false} text={'Update Inputs'} />
     </div>
   )
 }

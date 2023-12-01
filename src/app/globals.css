@@ -16,11 +16,11 @@
   --background-end-rgb: 255, 255, 255;
 
   /* Adding in Color Palette */
-  --primary-background-color: #F4F1DE;
-  --secondary-background-color: #F2CC8F;
-  --primary-font-color: #3D405B;
-  --secondary-font-color: #81B29A;
-  --tertiary-font-color: #E07A5F;
+  --primary-background-color: #f4f1de;
+  --secondary-background-color: #f2cc8f;
+  --primary-font-color: #3d405b;
+  --secondary-font-color: #81b29a;
+  --tertiary-font-color: #e07a5f;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -59,12 +59,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-     /* Adding in Color Palette */
-    --primary-background-color: #F4F1DE;
-    --secondary-background-color: #F2CC8F;
-    --primary-font-color: #3D405B;
-    --secondary-font-color: #81B29A;
-    --tertiary-font-color: #E07A5F;
+    /* Adding in Color Palette */
+    --primary-background-color: #f4f1de;
+    --secondary-background-color: #f2cc8f;
+    --primary-font-color: #3d405b;
+    --secondary-font-color: #81b29a;
+    --tertiary-font-color: #e07a5f;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -107,9 +107,9 @@ body {
 }
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-font-color);
-    border-color: var(--tertiary-font-color);
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+  border-color: var(--tertiary-font-color);
 }
 
 a {
