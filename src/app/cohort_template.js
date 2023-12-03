@@ -98,25 +98,41 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
-            excellent: '>23 reps',
+            name: 'Squat Rep Test',
+            average: '21-23 reps',
+            aboveAverage: '24-26 reps',
+            superior: '>29 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            name: 'Sit and Reach',
+            average: '21-23 in',
+            aboveAverage: '24-26 in',
+            superior: '>29 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 3 in',
+            average: '3 - 1.5 in',
+            superior: '< -1.5 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+          },
         ],
       },
+      
     ],
     appointments: {
       doctorCheckups: [
@@ -248,22 +264,37 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
+            name: 'Squat Rep Test',
             average: '15-17 reps',
             aboveAverage: '18-20 reps',
-            excellent: '>23 reps',
+            superior: '>23 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
+            name: 'Sit and Reach',
             average: '17.5 in',
             aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            superior: '20.5 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 5 in',
+            average: '5 - 1.5 in',
+            superior: '< - 1.5 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
@@ -398,22 +429,37 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
-            excellent: '>23 reps',
+            name: 'Squat Rep Test',
+            average: '9-11 reps',
+            aboveAverage: '12-14 reps',
+            excellent: '>17 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            name: 'Sit and Reach',
+            average: '-1 in - 4 in',
+            aboveAverage: '2 in - 5 in',
+            excellent: '> 5 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 6 in',
+            average: '6 - 2 in',
+            superior: '< 2 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
@@ -548,22 +594,37 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
-            excellent: '>23 reps',
+            name: 'Squat Rep Test',
+            average: '27 - 29 reps',
+            aboveAverage: '30 - 32 reps',
+            excellent: '>34 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
+            name: 'Sit and Reach',
             average: '17.5 in',
             aboveAverage: '19.0 in',
             excellent: '20.5 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 4.5 in',
+            average: '4.5 in',
+            superior: '< 0 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
@@ -698,22 +759,37 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
-            excellent: '>23 reps',
+            name: 'Squat Rep Test',
+            average: '21 - 23 reps',
+            aboveAverage: '24 - 26 reps',
+            excellent: '>29 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            name: 'Sit and Reach',
+            average: '15 in',
+            aboveAverage: '17 in',
+            excellent: '19 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 6.5 in',
+            average: '6.5 - 1.5 in',
+            superior: '< - 1.5 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
@@ -848,22 +924,37 @@ const healthData = {
         type: 'flexibility',
         markers: [
           {
-            name: 'squatRepTest',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
+            name: 'Squat Rep Test',
+            average: '15 - 17 reps',
+            aboveAverage: '18 - 20 reps',
             excellent: '>23 reps',
             type: 'flexibility',
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
+            ,
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
           {
-            name: 'sitAndReach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            name: 'Sit and Reach',
+            average: '13 in',
+            aboveAverage: '14.5 in',
+            excellent: '16 in',
             type: 'flexibility',
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
+            ,
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            belowAverage: '> 7.5 in',
+            average: '7.5 - 2 in',
+            superior: '< 2 in',
+            type: 'flexibility',
+            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
+            ,
+            comment:
+              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
