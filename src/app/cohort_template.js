@@ -16,32 +16,27 @@ const healthData = {
         type: 'cardiovascular',
         markers: [
           {
-            name: 'bloodPressureAvg',
-            value: '124/75',
+            name: 'Blood Pressure',
+            average: '124/75',
+            range: "",
             tooltip: '',
             type: 'cardiovascular',
             comment:
-              'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise.',
+              'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise. Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
           },
           {
-            name: 'bloodPressureRange',
-            value: '124/75',
-            tooltip: '',
-            type: 'cardiovascular',
-            comment:
-              'Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
-          },
-          {
-            name: 'restingHeartRate',
-            value: '124/75',
+            name: 'Resting Heart Rate',
+            average: '124/75',
+            range: "",
             tooltip: '',
             type: 'cardiovascular',
             comment:
               "A normal resting heart rate should be between 60 to 100 beats per minute, but it can vary from minute to minute. Your age and general health can also affect your pulse rate, so it's important to remember that a 'normal' pulse can vary from person to person.",
           },
           {
-            name: 'heartRateVariability',
-            value: '124/75',
+            name: 'Heart Rate Variability',
+            average: '124/75',
+            range: "",
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -53,23 +48,16 @@ const healthData = {
         type: 'physical',
         markers: [
           {
-            name: 'bodyMassIndexRange',
-            value: '24-36',
+            name: 'BMI',
+            average: '29',
+            range: '24-36',
             tooltip: '',
             type: 'physical',
             comment:
-              'If your BMI is less than 18.5, it falls within the underweight range. If your BMI is 18.5 to 24.9, it falls within the Healthy Weight range. If your BMI is 25.0 to 29.9, it falls within the overweight range. If your BMI is 30.0 or higher, it falls within the obese range.',
+              'If your BMI is less than 18.5, it falls within the underweight range. If your BMI is 18.5 to 24.9, it falls within the Healthy Weight range. If your BMI is 25.0 to 29.9, it falls within the overweight range. If your BMI is 30.0 or higher, it falls within the obese range. The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is healthy. For most adults, an ideal BMI is in the 18.5 to 24.9 range. For children and young people aged 2 to 18, the BMI calculation takes into account age and gender as well as height and weight.',
           },
           {
-            name: 'bodyMassIndexAvg',
-            value: '29',
-            tooltip: 'tooltip explaining what this is & limitiations',
-            type: 'physical',
-            comment:
-              'The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is healthy. For most adults, an ideal BMI is in the 18.5 to 24.9 range. For children and young people aged 2 to 18, the BMI calculation takes into account age and gender as well as height and weight.',
-          },
-          {
-            name: 'activeMinutesWeek',
+            name: 'Active Minutes Per Week',
             value: '150',
             tooltip: 'minutes per week',
             type: 'physical',
@@ -77,7 +65,7 @@ const healthData = {
               'Get at least 150 minutes per week of moderate-intensity aerobic activity or 75 minutes per week of vigorous aerobic activity, or a combination of both, preferably spread throughout the week.',
           },
           {
-            name: 'strengthTraining',
+            name: 'Strength Training',
             value: '2',
             tooltip: 'sessions per week',
             type: 'physical',
@@ -85,49 +73,21 @@ const healthData = {
               'The ideal breakdown of cardio and strength work varies depending on your specific goals, but in general, four to five days a week of exercise will do the trick if you’re aiming to improve or maintain your fitness.',
           },
           {
-            name: 'averageMileRange',
-            value: '12:00 - 14:00',
+            name: 'Mile Time',
+            average: '13:00',
+            range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
+            kilo_range: '7:00 - 8:30',
+            kilo_avg: '7:45',
             comment:
               'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
           },
           {
-            name: 'averageMileTime',
-            value: '13:00',
-            tooltip: 'minutes',
-            type: 'physical',
-            comment:
-              'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
-          },
-          {
-            name: 'averageKiloRange',
-            value: '7:00 - 8:30',
-            tooltip: 'minutes',
-            type: 'physical',
-            comment:
-              'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
-          },
-          {
-            name: 'averageKiloTime',
-            value: '7:45',
-            tooltip: 'minutes',
-            type: 'physical',
-            comment:
-              'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
-          },
-          {
-            name: 'pushUps',
-            value: '7-14',
+            name: 'Push Ups',
+            average: '10',
+            range: '7-14',
             tooltip: 'bent knee',
-            type: 'physical',
-            comment:
-              "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
-          },
-          {
-            name: 'pushUpsAvg',
-            value: '10',
-            tooltip: 'total reps',
             type: 'physical',
             comment:
               "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
