@@ -35,16 +35,6 @@ export default function Results() {
       <div className={styles.topRow}>
         <div className={styles.topRowColumn}>
           <IoPersonCircleSharp style={{ fontSize: '100pt' }} />
-          {/* TEST CODE for accessing the objects */}
-          {healthData['female_40_59']['healthMarkers'][0]['markers'].map(
-            point => {
-              return (
-                <p>
-                  {point['name']} - {point['value']}
-                </p>
-              )
-            }
-          )}
         </div>
         <div className={styles.topRowColumn}>GENDER AGE</div>
       </div>
