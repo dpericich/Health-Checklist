@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import LinkButton from '../components/linkButton'
+import LinkButton from '../components/linkButton/linkButton'
 import styles from './page.module.css'
 import {
   ageGroups,

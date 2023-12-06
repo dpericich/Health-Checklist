@@ -6,7 +6,7 @@
 
 'use client'
 import healthData from '@/app/cohort_template'
-import styles from '../app/results/page.module.css'
+import styles from './markers.module.css'
 import MarkerList from './MarkerList'
 import { FaHeartbeat } from 'react-icons/fa'
 import { FaDumbbell } from 'react-icons/fa6'

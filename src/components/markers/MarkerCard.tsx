@@ -3,8 +3,8 @@
 // 2. name can be clicked to open modal and display data.
 
 import { useState } from 'react'
-import styles from '../app/results/page.module.css'
-import MarkerModal from './MarkerModal'
+import styles from './markers.module.css'
+import MarkerModal from '../modal/MarkerModal'
 
 const MarkerCard = ({ item }: any) => {
   const [openMarker, setOpenMarker] = useState(false)
@@ -13,7 +13,7 @@ const MarkerCard = ({ item }: any) => {
       className={styles.cardContainer}
       onClick={() => setOpenMarker(!openMarker)}
     >
-      <p>{item.name}</p>
+      <p style={{ fontFamily: 'Verdana' }}>{item.name}</p>
 
       {openMarker === true ? (
         <MarkerModal onClose={() => setOpenMarker(!openMarker)} item={item} />

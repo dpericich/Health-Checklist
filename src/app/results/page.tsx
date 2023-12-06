@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import LinkButton from '../../components/linkButton'
+import LinkButton from '../../components/linkButton/linkButton'
 import styles from './page.module.css'
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import healthData from '../cohort_template'
@@ -8,7 +8,7 @@ import {
   usePathname,
   useSearchParams,
 } from '../../../node_modules/next/navigation'
-import HealthMarkers from '@/components/HealthMarkers'
+import HealthMarkers from '@/components/markers/HealthMarkers'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')

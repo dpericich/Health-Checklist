@@ -1,0 +1,54 @@
+.markersContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.listsContainer {
+  border: 4pt solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  padding: 10px;
+  width: calc(100% / 3);
+  box-shadow: 2px 2px 5px rgb(137, 137, 137);
+  padding: 10px 20px 10px 20px;
+}
+
+.listHeader {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.listContent {
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 2px 0 5px rgb(176, 176, 176);
+  border-radius: 0.5rem;
+  background-color: white;
+  gap: 0.3rem;
+  width: 100%;
+  padding: 10px;
+  height: 250px;
+}
+.cardContainer {
+  font-size: 14pt;
+  color: grey;
+  margin-bottom: 3px;
+  border-right: 4pt solid transparent;
+}
+.cardContainer:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: var(--primary-font-color);
+  border-right: 4pt solid grey;
+}
+
+.markerDetails {
+  display: flex;
+  gap: 1rem;
+}
