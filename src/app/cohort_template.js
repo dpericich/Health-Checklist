@@ -220,7 +220,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -228,7 +228,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -236,7 +236,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -247,8 +247,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -382,7 +382,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -390,7 +390,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -398,7 +398,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -409,8 +409,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -544,7 +544,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -552,7 +552,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -560,7 +560,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -571,8 +571,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -706,7 +706,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -714,7 +714,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -722,7 +722,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -733,8 +733,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -868,7 +868,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -876,7 +876,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -884,7 +884,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -895,8 +895,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:

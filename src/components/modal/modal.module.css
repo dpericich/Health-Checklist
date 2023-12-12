@@ -58,6 +58,7 @@
   width: 33%;
   height: 80px;
   padding: 5px;
+  margin-bottom: 15px;
   /* background-color: rgb(118, 161, 126); */
   background-color: #81b29a;
   color: white;
@@ -87,6 +88,7 @@
   padding: 1rem 1.5rem;
   margin: 1rem;
   background-color: var(--primary-font-color);
+  color: white;
   border: 2pt solid transparent;
   border-radius: 6px;
   height: 20px;

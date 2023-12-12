@@ -45,7 +45,6 @@
   transition: 0.3s ease;
   cursor: pointer;
   color: var(--primary-font-color);
-  border-right: 4pt solid grey;
 }
 
 .markerDetails {

@@ -2,6 +2,7 @@ import styles from './modal.module.css'
 import { FaHeartbeat } from 'react-icons/fa'
 import { FaDumbbell } from 'react-icons/fa6'
 import { TbStretching } from 'react-icons/tb'
+import Accordion from './Accordion'
 
 const iconMappings = {
   physical: <FaDumbbell />,
@@ -9,7 +10,7 @@ const iconMappings = {
   flexibility: <TbStretching />,
 }
 
-const MarkerModal = ({ openMarker, onClose, item }: any) => {
+const MarkerModal = ({ onClose, item }: any) => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalHeader}>
@@ -56,8 +57,9 @@ const MarkerModal = ({ openMarker, onClose, item }: any) => {
           </span>
         </div>
       )}
+      <Accordion item={item} />
 
-      <p className={styles.modalComment}>{item.comment}</p>
+      {/* <p className={styles.modalComment}>{item.comment}</p> */}
       <button className={styles.button} onClick={onClose}>
         Close
       </button>

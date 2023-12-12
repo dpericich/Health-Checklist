@@ -16,8 +16,10 @@ export default function Home() {
   const [disabled, setDisabled] = useState(true)
   const [ageGroup, setAgeGroup] = useState('')
   const [gender, setGender] = useState('')
+  const [quote, setQuote] = useState('')
 
   useEffect(() => {
+    setQuote(quotes[Math.floor(Math.random() * 7)])
     if (ageGroup !== '' && gender !== '') {
       setDisabled(false)
     }
@@ -30,7 +32,8 @@ export default function Home() {
       </div>
       <div className={styles.formContainer}>
         <div className={styles.randomQuote}>
-          <p>{quotes[Math.floor(Math.random() * 7)]}</p>
+          {/* <p>{quotes[Math.floor(Math.random() * 7)]}</p> */}
+          <p>{quote}</p>
         </div>
 
         <form>

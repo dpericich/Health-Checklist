@@ -9,11 +9,14 @@ import MarkerModal from '../modal/MarkerModal'
 const MarkerCard = ({ item }: any) => {
   const [openMarker, setOpenMarker] = useState(false)
   return (
-    <div
-      className={styles.cardContainer}
-      onClick={() => setOpenMarker(!openMarker)}
-    >
-      <p style={{ fontFamily: 'Verdana' }}>{item.name}</p>
+    <div className={styles.cardContainer}>
+      <button
+        className="btn btn-sm btn-primary w-full text-white"
+        onClick={() => setOpenMarker(!openMarker)}
+        style={{ fontFamily: 'Verdana' }}
+      >
+        {item.name}
+      </button>
 
       {openMarker === true ? (
         <MarkerModal onClose={() => setOpenMarker(!openMarker)} item={item} />
