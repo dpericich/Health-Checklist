@@ -973,20 +973,20 @@ const healthData = {
   },
 }
 
-export const quotes = {
-  0: 'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise.',
+export const quotes = [
+  'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise.',
 
-  1: 'Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
+  'Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
 
-  2: 'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
+  'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
 
-  3: 'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
+  'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
 
-  4: "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
+  "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
 
-  5: 'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+  'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
 
-  6: 'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
-}
+  'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+]
 
 export default healthData

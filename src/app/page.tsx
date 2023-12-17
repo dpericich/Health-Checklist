@@ -19,11 +19,14 @@ export default function Home() {
   const [quote, setQuote] = useState('')
 
   useEffect(() => {
-    setQuote(quotes[Math.floor(Math.random() * 7)])
     if (ageGroup !== '' && gender !== '') {
       setDisabled(false)
     }
   }, [gender, ageGroup])
+
+  useEffect(() => {
+    setQuote(quotes[Math.floor(Math.random() * 7)])
+  }, [])
 
   return (
     <div className={styles.userInputContainer}>
@@ -32,7 +35,6 @@ export default function Home() {
       </div>
       <div className={styles.formContainer}>
         <div className={styles.randomQuote}>
-          {/* <p>{quotes[Math.floor(Math.random() * 7)]}</p> */}
           <p>{quote}</p>
         </div>
 
