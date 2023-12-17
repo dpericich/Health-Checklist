@@ -1,9 +1,9 @@
-.markersContainer {
+/* .markersContainer {
   display: flex;
   gap: 1rem;
   align-items: center;
   width: 100%;
-}
+} */
 .listsContainer {
   border: 4pt solid transparent;
   display: flex;
@@ -12,7 +12,6 @@
   align-items: center;
   border-radius: 0.3rem;
   padding: 10px;
-  width: calc(100% / 3);
   box-shadow: 2px 2px 5px rgb(137, 137, 137);
   padding: 10px 20px 10px 20px;
 }

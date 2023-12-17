@@ -10,7 +10,7 @@ const iconMappings = {
   flexibility: <TbStretching />,
 }
 
-const MarkerModal = ({ onClose, item }: any) => {
+const MarkerModal = ({ openModal, onClose, item }: any) => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalHeader}>

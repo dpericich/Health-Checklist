@@ -22,7 +22,8 @@ const HealthMarkers = () => {
   const { healthMarkers } = healthData['female_40_59']
 
   return (
-    <div className={styles.markersContainer}>
+    // <div className={styles.markersContainer}>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center w-[100%]">
       {healthMarkers.map((item, i) => {
         return (
           <div className={styles.listsContainer} key={i}>

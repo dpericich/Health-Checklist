@@ -7,19 +7,24 @@ import styles from './markers.module.css'
 import MarkerModal from '../modal/MarkerModal'
 
 const MarkerCard = ({ item }: any) => {
-  const [openMarker, setOpenMarker] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
   return (
     <div className={styles.cardContainer}>
       <button
-        className="btn btn-sm btn-primary w-full text-white"
-        onClick={() => setOpenMarker(!openMarker)}
+        className="btn btn-sm btn-primary w-full text-white  transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400"
+        onClick={() => setOpenModal(!openModal)}
         style={{ fontFamily: 'Verdana' }}
       >
         {item.name}
       </button>
 
-      {openMarker === true ? (
-        <MarkerModal onClose={() => setOpenMarker(!openMarker)} item={item} />
+      {openModal === true ? (
+        <MarkerModal
+          openMarker={openModal}
+          setOpenModal={setOpenModal}
+          onClose={() => setOpenModal(!openModal)}
+          item={item}
+        />
       ) : (
         <span></span>
       )}
