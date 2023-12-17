@@ -9,6 +9,7 @@ import {
   useSearchParams,
 } from '../../../node_modules/next/navigation'
 import HealthMarkers from '@/components/markers/HealthMarkers'
+import AppointmentsSection from '@/components/appointments/appointmentsSection'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')
@@ -56,6 +57,7 @@ export default function Results() {
       </div>
       <div className={styles.contentRow}>
       <h2 className={styles.sectionsHeadings}>Appointments</h2>
+        <AppointmentsSection />
       </div>
       <div className={styles.contentRow}>
         <h2>Interactive Links/Buttons</h2>
