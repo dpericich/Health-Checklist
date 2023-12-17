@@ -15,7 +15,7 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
                 <MdHealthAndSafety style={{ fontSize: '40px', margin: '10px 10px 10px 0' }} />
                 Doctor Appointments
             </div>
-            <div className="grid card p-6 border-2 border-black border-solid rounded-box shadow-lg">
+            <div className="grid card p-6 border-2 border-primary-font-color border-solid rounded-box shadow-lg">
                 <ul>
                     { healthData[ageKey]?.appointments.doctorCheckups?.map(item => 
                         <a key={item.name} href={item.link} target="_blank">
@@ -31,7 +31,7 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
                 <TbDental style={{ fontSize: '40px', margin: '10px 10px 10px 0' }} />
                 <span>Dental Appointments</span>
             </div>
-            <div className="grid card p-6 border-2 border-black border-solid rounded-box shadow-lg">
+            <div className="grid card p-6 border-2 border-primary-font-color border-solid rounded-box shadow-lg">
                 <ul>
                     { healthData[ageKey]?.appointments.dentalCheckups?.map(item => 
                         <a key={item.name} href={item.link} target="_blank">
