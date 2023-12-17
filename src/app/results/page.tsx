@@ -39,7 +39,7 @@ export default function Results() {
         <div className={styles.topRowColumn}>GENDER AGE</div>
       </div>
       <div className={styles.statsContainer}>
-        <h1 className={styles.healthMarkersHeading}>Health Markers</h1>
+        <h2 className={styles.sectionsHeadings}>Health Markers</h2>
         <div className={styles.statsRow}>
           <HealthMarkers />
         </div>
@@ -55,13 +55,7 @@ export default function Results() {
         </p>
       </div>
       <div className={styles.contentRow}>
-        <h2>Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          voluptatem quibusdam, hic ipsam ad assumenda dolorum, eum molestias
-          temporibus, voluptatibus dolorem? Laborum doloremque reiciendis id
-          fugiat recusandae velit earum quas?
-        </p>
+      <h2 className={styles.sectionsHeadings}>Appointments</h2>
       </div>
       <div className={styles.contentRow}>
         <h2>Interactive Links/Buttons</h2>
