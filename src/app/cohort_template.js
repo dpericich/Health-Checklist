@@ -1,6 +1,6 @@
 const healthData = {
   female_20_39: {
-    age: '20_39',
+    age: '20-39',
     sex: 'Female',
     summary: {
       description:
@@ -166,7 +166,7 @@ const healthData = {
     ],
   },
   female_40_59: {
-    age: '40_59',
+    age: '40-59',
     sex: 'Female',
     summary: {
       description:
@@ -331,7 +331,7 @@ const healthData = {
     ],
   },
   female_60_79: {
-    age: '60_79',
+    age: '60-79',
     sex: 'Female',
     summary: {
       description:
@@ -496,7 +496,7 @@ const healthData = {
     ],
   },
   male_20_39: {
-    age: '20_39',
+    age: '20-39',
     sex: 'Male',
     summary: {
       description:
@@ -661,7 +661,7 @@ const healthData = {
     ],
   },
   male_40_59: {
-    age: '40_59',
+    age: '40-59',
     sex: 'Male',
     summary: {
       description:
@@ -826,7 +826,7 @@ const healthData = {
     ],
   },
   male_60_79: {
-    age: '60_79',
+    age: '60-79',
     sex: 'Male',
     summary: {
       description:
