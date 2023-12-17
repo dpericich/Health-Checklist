@@ -63,7 +63,7 @@ export default function Results() {
         <h2>Interactive Links/Buttons</h2>
         <p>Potential space for accordian, tabs, buttons etc.</p>
       </div>
-      <LinkButton link={'/'} disabled={false} text={'Update Inputs'} />
+      <LinkButton link={'/'} disabled={false} text={'Update Your Info'} />
     </div>
   )
 }
