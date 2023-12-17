@@ -17,7 +17,13 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
             </div>
             <div className="grid card p-6 border-2 border-black border-solid rounded-box shadow-lg">
                 <ul>
-                    { healthData[ageKey]?.appointments.doctorCheckups?.map(item => <li key={item}>{item}</li>)}
+                    { healthData[ageKey]?.appointments.doctorCheckups?.map(item => 
+                        <a key={item.name} href={item.link} target="_blank">
+                            <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4">
+                                {item.name}
+                            </li>
+                        </a>    
+                    )}
                 </ul>
             </div>
             <div className="divider mt-10 mb-6"></div> 
@@ -27,7 +33,13 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
             </div>
             <div className="grid card p-6 border-2 border-black border-solid rounded-box shadow-lg">
                 <ul>
-                    { healthData[ageKey]?.appointments.dentalCheckups?.map(item => <li key={item}>{item}</li>)}
+                    { healthData[ageKey]?.appointments.dentalCheckups?.map(item => 
+                        <a key={item.name} href={item.link} target="_blank">
+                            <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4">
+                                {item.name}
+                            </li>
+                        </a>    
+                    )}
                 </ul>
             </div>
         </div>
