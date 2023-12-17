@@ -57,7 +57,7 @@ export default function Results() {
       </div>
       <div className={styles.contentRow}>
       <h2 className={styles.sectionsHeadings}>Appointments</h2>
-        <AppointmentsSection />
+        <AppointmentsSection ageKey={dataKey} />
       </div>
       <div className={styles.contentRow}>
         <h2>Interactive Links/Buttons</h2>
