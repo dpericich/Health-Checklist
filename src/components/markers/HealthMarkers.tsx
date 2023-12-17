@@ -6,7 +6,7 @@
 
 'use client'
 import healthData from '@/app/cohort_template'
-import styles from '../app/results/page.module.css'
+import styles from './markers.module.css'
 import MarkerList from './MarkerList'
 import { FaHeartbeat } from 'react-icons/fa'
 import { FaDumbbell } from 'react-icons/fa6'
@@ -22,7 +22,8 @@ const HealthMarkers = () => {
   const { healthMarkers } = healthData['female_40_59']
 
   return (
-    <div className={styles.markersContainer}>
+    // <div className={styles.markersContainer}>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center w-[100%]">
       {healthMarkers.map((item, i) => {
         return (
           <div className={styles.listsContainer} key={i}>

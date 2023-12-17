@@ -18,7 +18,7 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: "",
+            range: [],
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -27,7 +27,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -36,7 +36,7 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -58,7 +58,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -66,7 +66,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -74,7 +74,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -85,8 +85,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -103,8 +103,7 @@ const healthData = {
             aboveAverage: '24-26 reps',
             superior: '>29 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -114,25 +113,22 @@ const healthData = {
             aboveAverage: '24-26 in',
             superior: '>29 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 3 in',
-            average: '3 - 1.5 in',
+            average: '> 3 in',
+            aboveAverage: '3 - 1.5 in',
             superior: '< -1.5 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
         ],
       },
-      
     ],
     appointments: {
       doctorCheckups: [
@@ -170,7 +166,7 @@ const healthData = {
     sex: 'Female',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. It is very important to lift weights, and get good amounts of cardiovascular exercise to metigate the risks associated with menopause.",
+        'Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. It is very important to lift weights, and get good amounts of cardiovascular exercise to metigate the risks associated with menopause.',
       keyPoints: [
         'Bone density starts to decrease .5%/.per year or more.',
         "Prioritize a fitness routine with weights and cardio if you haven't.",
@@ -184,8 +180,9 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: "106/64 - 142/86",
-            tooltip: 'systolic (when the heart beats)/dialstolic (when the heart rests)',
+            range: '106/64 - 142/86',
+            tooltip:
+              'systolic (when the heart beats)/dialstolic (when the heart rests)',
             type: 'cardiovascular',
             comment:
               'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise. Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
@@ -193,7 +190,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '75',
-            range: "64-85",
+            range: '64-85',
             tooltip: 'Generally, the lower the more health you on this metric',
             type: 'cardiovascular',
             comment:
@@ -202,8 +199,9 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '55',
-            range: "49-71",
-            tooltip: 'The higher the better, it signifies a more adaptive nervous system and more time in a physically relaxed state.',
+            range: '49-71',
+            tooltip:
+              'The higher the better, it signifies a more adaptive nervous system and more time in a physically relaxed state.',
             type: 'cardiovascular',
             comment:
               'Heart rate variability is where the amount of time between your heartbeats fluctuates slightly. These variations are very small, adding or subtracting a fraction of a second between beats.',
@@ -224,7 +222,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -232,7 +230,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -240,7 +238,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -251,8 +249,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -269,8 +267,7 @@ const healthData = {
             aboveAverage: '18-20 reps',
             superior: '>23 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -280,8 +277,7 @@ const healthData = {
             aboveAverage: '19.0 in',
             superior: '20.5 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
@@ -291,8 +287,7 @@ const healthData = {
             average: '5 - 1.5 in',
             superior: '< - 1.5 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -349,7 +344,7 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -358,7 +353,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -367,7 +362,7 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -389,7 +384,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -397,7 +392,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -405,7 +400,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -416,8 +411,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -434,8 +429,7 @@ const healthData = {
             aboveAverage: '12-14 reps',
             excellent: '>17 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -445,8 +439,7 @@ const healthData = {
             aboveAverage: '2 in - 5 in',
             excellent: '> 5 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
@@ -456,8 +449,7 @@ const healthData = {
             average: '6 - 2 in',
             superior: '< 2 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -514,7 +506,7 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -523,7 +515,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -532,7 +524,7 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -554,7 +546,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -562,7 +554,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -570,7 +562,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -581,8 +573,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -599,8 +591,7 @@ const healthData = {
             aboveAverage: '30 - 32 reps',
             excellent: '>34 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -610,8 +601,7 @@ const healthData = {
             aboveAverage: '19.0 in',
             excellent: '20.5 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
@@ -621,8 +611,7 @@ const healthData = {
             average: '4.5 in',
             superior: '< 0 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -679,7 +668,7 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -688,7 +677,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -697,7 +686,7 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '124/75',
-            range: "",
+            range: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -719,7 +708,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -727,7 +716,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -735,7 +724,7 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
+            average: 'Time: 13:00',
             range: '12:00 - 14:00',
             tooltip: 'minutes',
             type: 'physical',
@@ -746,8 +735,8 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: 'Reps: 10',
+            range: '7-14 reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -764,8 +753,7 @@ const healthData = {
             aboveAverage: '24 - 26 reps',
             excellent: '>29 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -775,8 +763,7 @@ const healthData = {
             aboveAverage: '17 in',
             excellent: '19 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
@@ -786,8 +773,7 @@ const healthData = {
             average: '6.5 - 1.5 in',
             superior: '< - 1.5 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -830,7 +816,7 @@ const healthData = {
     sex: 'Male',
     summary: {
       description:
-        "Men your age have three big concerns: heart disease, diabetes, and cancer. Things you can do to prevent these things include: not smoking, getting regular exercise, and ensuring you get regular cancer screenings with your doctor.",
+        'Men your age have three big concerns: heart disease, diabetes, and cancer. Things you can do to prevent these things include: not smoking, getting regular exercise, and ensuring you get regular cancer screenings with your doctor.',
       keyPoints: [
         "Don't smoke",
         'Exercise - Cardio, Strength training, Stability training',
@@ -844,7 +830,7 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '133/72',
-            range: "115/60-151/84",
+            range: '115/60-151/84',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -853,7 +839,7 @@ const healthData = {
           {
             name: 'Resting Heart Rate',
             average: '74',
-            range: "64-85",
+            range: '64-85',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -862,7 +848,7 @@ const healthData = {
           {
             name: 'Heart Rate Variability',
             average: '52',
-            range: "49-65",
+            range: '49-65',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -884,7 +870,7 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            value: '150',
+            average: 'Mins per week: 150',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -892,7 +878,7 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            value: '2',
+            average: 'Sessions per week: 2',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -929,8 +915,7 @@ const healthData = {
             aboveAverage: '18 - 20 reps',
             excellent: '>23 reps',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued."
-            ,
+            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -940,8 +925,7 @@ const healthData = {
             aboveAverage: '14.5 in',
             excellent: '16 in',
             type: 'flexibility',
-            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.' 
-            ,
+            test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
           },
@@ -951,8 +935,7 @@ const healthData = {
             average: '7.5 - 2 in',
             superior: '< 2 in',
             type: 'flexibility',
-            test: "In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers."
-            ,
+            test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
           },
@@ -968,7 +951,7 @@ const healthData = {
         'Breast Cancer Screening',
         'Cervical Cancer Screening',
         'Colorectal Cancer Screening',
-        'Eye Exam'
+        'Eye Exam',
       ],
       dentalCheckups: ['Annual Dental Appointment'],
     },
@@ -983,30 +966,30 @@ const healthData = {
         text: "Strength and balance are often overlooked but are one of the most heavily contributing factors to your health as you age. If you fall & break a hip your mortality rate will skyrocket, and the less muscle mass and balance you have the more likely this is to happen.\n\nA regular workout routine that includes strength and stability training is going to be very important to maintain quality of life for men your age. The goal should be functional movement. This will also greatly reduce your risk of 2 out of the 3 risk largest risk factors you face: heart disease and diabetes.\n\nOther serious risk factors for men your age include cancer, influenza, and pneumonia. If you have any kind of respiratory issues affecting you such as asthma or COPD this is more concerning for you and your level of caution around this should be higher. If you smoke, the best thing you can do for yourself is stop. 90% of cases of lung cancer result from smoking, and it's not too late for you no matter your age.\n\nLesser known but important issues for men your age are oral health and depression. Oral health has been strongly linked with good cardiovascular health and less risk for infection. Depression is just as common as men as in women but men are much less likely to report this issue to anyone. It increases your all-cause-mortality rate significanltly and should not be ingored. So to breifly recap all the main points here:",
         bulletPoints: [
           "Don't smoke",
-          "Do strength and stability training",
-          "Get screenings for prostate cancer",
-          "Take good care of your health",
-          "Be mindful of and take steps to treat depression"
+          'Do strength and stability training',
+          'Get screenings for prostate cancer',
+          'Take good care of your health',
+          'Be mindful of and take steps to treat depression',
         ],
       },
     ],
   },
 }
 
-export const quotes = {
-  0: 'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise.',
+export const quotes = [
+  'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise.',
 
-  1: 'Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
+  'Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
 
-  2: 'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
+  'The one-mile endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
 
-  3: 'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
+  'The one-kilo endurance run or walk test is a commonly used walk/run test of aerobic endurance. ',
 
-  4: "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
+  "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
 
-  5: 'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+  'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
 
-  6: 'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
-}
+  'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+]
 
 export default healthData
