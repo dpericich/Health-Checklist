@@ -1,6 +1,6 @@
 const healthData = {
-  female_40_59: {
-    age: '40-59',
+  female_20_39: {
+    age: '20-39',
     sex: 'Female',
     summary: {
       description:
@@ -162,15 +162,15 @@ const healthData = {
     ],
   },
   female_40_59: {
-    age: '40_59',
+    age: '40-59',
     sex: 'Female',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        'Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. It is very important to lift weights, and get good amounts of cardiovascular exercise to metigate the risks associated with menopause.',
       keyPoints: [
-        'Bone density starts to decrease .5%/.per year.',
-        'Unintentional weight gain and lean muscle loss.',
-        'Hormonal imbalances may negatively affect mood and sleep.',
+        'Bone density starts to decrease .5%/.per year or more.',
+        "Prioritize a fitness routine with weights and cardio if you haven't.",
+        'Hormonal imbalances may negatively affect mood and sleep due to menopause.',
       ],
     },
     healthMarkers: [
@@ -180,26 +180,28 @@ const healthData = {
           {
             name: 'Blood Pressure',
             average: '124/75',
-            range: '',
-            tooltip: '',
+            range: '106/64 - 142/86',
+            tooltip:
+              'systolic (when the heart beats)/dialstolic (when the heart rests)',
             type: 'cardiovascular',
             comment:
               'Blood pressure numbers of less than 120/80 mm Hg (millimeters of mercury) are considered within the normal range. If your results fall into this category, stick with heart-healthy habits like following a balanced diet and getting regular exercise. Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be below 90/60mmHg.',
           },
           {
             name: 'Resting Heart Rate',
-            average: '124/75',
-            range: '',
-            tooltip: '',
+            average: '75',
+            range: '64-85',
+            tooltip: 'Generally, the lower the more health you on this metric',
             type: 'cardiovascular',
             comment:
               "A normal resting heart rate should be between 60 to 100 beats per minute, but it can vary from minute to minute. Your age and general health can also affect your pulse rate, so it's important to remember that a 'normal' pulse can vary from person to person.",
           },
           {
             name: 'Heart Rate Variability',
-            average: '124/75',
-            range: '',
-            tooltip: '',
+            average: '55',
+            range: '49-71',
+            tooltip:
+              'The higher the better, it signifies a more adaptive nervous system and more time in a physically relaxed state.',
             type: 'cardiovascular',
             comment:
               'Heart rate variability is where the amount of time between your heartbeats fluctuates slightly. These variations are very small, adding or subtracting a fraction of a second between beats.',
@@ -324,7 +326,7 @@ const healthData = {
     ],
   },
   female_60_79: {
-    age: '60_79',
+    age: '60-79',
     sex: 'Female',
     summary: {
       description:
@@ -486,7 +488,7 @@ const healthData = {
     ],
   },
   male_20_39: {
-    age: '20_39',
+    age: '20-39',
     sex: 'Male',
     summary: {
       description:
@@ -648,7 +650,7 @@ const healthData = {
     ],
   },
   male_40_59: {
-    age: '40_59',
+    age: '40-59',
     sex: 'Male',
     summary: {
       description:
@@ -810,15 +812,15 @@ const healthData = {
     ],
   },
   male_60_79: {
-    age: '',
+    age: '60-79',
     sex: 'Male',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        'Men your age have three big concerns: heart disease, diabetes, and cancer. Things you can do to prevent these things include: not smoking, getting regular exercise, and ensuring you get regular cancer screenings with your doctor.',
       keyPoints: [
-        'Bone density starts to decrease .5%/.per year.',
-        'Unintentional weight gain and lean muscle loss.',
-        'Hormonal imbalances may negatively affect mood and sleep.',
+        "Don't smoke",
+        'Exercise - Cardio, Strength training, Stability training',
+        'Get regular cancer screenings with your doctor',
       ],
     },
     healthMarkers: [
@@ -827,8 +829,8 @@ const healthData = {
         markers: [
           {
             name: 'Blood Pressure',
-            average: '124/75',
-            range: '',
+            average: '133/72',
+            range: '115/60-151/84',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -836,8 +838,8 @@ const healthData = {
           },
           {
             name: 'Resting Heart Rate',
-            average: '124/75',
-            range: '',
+            average: '74',
+            range: '64-85',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -845,8 +847,8 @@ const healthData = {
           },
           {
             name: 'Heart Rate Variability',
-            average: '124/75',
-            range: '',
+            average: '52',
+            range: '49-65',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -860,7 +862,7 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
+            range: '23-35',
             tooltip: '',
             type: 'physical',
             comment:
@@ -884,8 +886,8 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
-            range: '12:00 - 14:00',
+            average: '12:43',
+            range: '11:36 - 15:08',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -895,9 +897,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
-            tooltip: 'bent knee',
+            average: '9',
+            range: '6-13',
+            tooltip: 'standard push up',
             type: 'physical',
             comment:
               "Push-ups are an equipment-free resistance exercise that can help you build muscle strength. And they're not just for serious gym-goers. Whether you do traditional push-ups or a modified version, you'll enjoy research-proven health benefits. ",
@@ -956,17 +958,18 @@ const healthData = {
     degradation: [
       {
         name: 'Key Lookouts',
-        text: 'The most impactful diseases to lookout for are depression, cardiovascular disease. These are associated with a 2x chance of significantly decreased health. The worst behavior for risk of poor health outcomes is smoking at your age.\n\n In short, lookout for:',
-        bulletPoints: ['Cardiovascular health', 'Depression', 'Smoking'],
+        text: 'The largest risk factors for men your age include heart disease, prostate cancer, and diabetes. The best way to treat both heart disease and diabetes is exercise. Men who exercise at least 30 minutes per day have a 50% decreased risk of diabetes. For your prostate, it is best to get regular screenings with your doctor.',
+        bulletPoints: ['Cardiovascular health', 'Prostate Cancer.', 'Diabetes'],
       },
       {
         name: 'Longevity info',
-        text: "Bone density and breast cancer carry your greatist risk for deteriorating your quality of life or increasing mortatlity rate. Make sure you're lifting weights and getting mammograms at regular intervals over these two decades.\n\n Most people by 50 cannot twist at all. Make sure you are doing what you can to train your ability to twist. Balance is also very important at your age, as your greatest risk for poor health outcomes from accidents come from falling once you get past your 50s.\n\n In short, lookout for:",
+        text: "Strength and balance are often overlooked but are one of the most heavily contributing factors to your health as you age. If you fall & break a hip your mortality rate will skyrocket, and the less muscle mass and balance you have the more likely this is to happen.\n\nA regular workout routine that includes strength and stability training is going to be very important to maintain quality of life for men your age. The goal should be functional movement. This will also greatly reduce your risk of 2 out of the 3 risk largest risk factors you face: heart disease and diabetes.\n\nOther serious risk factors for men your age include cancer, influenza, and pneumonia. If you have any kind of respiratory issues affecting you such as asthma or COPD this is more concerning for you and your level of caution around this should be higher. If you smoke, the best thing you can do for yourself is stop. 90% of cases of lung cancer result from smoking, and it's not too late for you no matter your age.\n\nLesser known but important issues for men your age are oral health and depression. Oral health has been strongly linked with good cardiovascular health and less risk for infection. Depression is just as common as men as in women but men are much less likely to report this issue to anyone. It increases your all-cause-mortality rate significanltly and should not be ingored. So to breifly recap all the main points here:",
         bulletPoints: [
-          'Bone Density',
-          'Breast Cancer',
-          'Twist Flexibility',
-          'Balance',
+          "Don't smoke",
+          'Do strength and stability training',
+          'Get screenings for prostate cancer',
+          'Take good care of your health',
+          'Be mindful of and take steps to treat depression',
         ],
       },
     ],
