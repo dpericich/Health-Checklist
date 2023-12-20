@@ -132,16 +132,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
@@ -296,16 +298,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
@@ -458,16 +462,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
@@ -620,16 +626,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
@@ -782,16 +790,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
@@ -944,16 +954,18 @@ const healthData = {
     ],
     appointments: {
       doctorCheckups: [
-        'Annual PCP Appointment',
-        'Blood Pressure Screening',
-        'Cholesterol Screening',
-        'Diabetes Screening',
-        'Breast Cancer Screening',
-        'Cervical Cancer Screening',
-        'Colorectal Cancer Screening',
-        'Eye Exam',
+        { name: 'Annual PCP Appointment', link: 'https://health.clevelandclinic.org/why-you-need-an-annual-physical-and-what-to-expect'},
+        { name: 'Blood Pressure Screening', link: 'https://www.mayoclinic.org/tests-procedures/blood-pressure-test/about/pac-20393098' },
+        { name: 'Cholesterol Screening', link: 'https://www.cdc.gov/cholesterol/cholesterol_screening.htm' },
+        { name: 'Diabetes Screening', link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html' },
+        { name: 'Breast Cancer Screening', link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm' },
+        { name: 'Cervical Cancer Screening', link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm' },
+        { name: 'Colorectal Cancer Screening', link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm' },
+        { name: 'Eye Exam', link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101' },
       ],
-      dentalCheckups: ['Annual Dental Appointment'],
+      dentalCheckups: [
+        { name: 'Annual Dental Appointment', link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up' }
+      ],
     },
     degradation: [
       {
