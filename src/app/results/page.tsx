@@ -10,7 +10,7 @@ import {
 } from '../../../node_modules/next/navigation'
 import HealthMarkers from '@/components/markers/HealthMarkers'
 import AppointmentsSection from '@/components/appointments/appointmentsSection'
-import mainSummarySection from '@/components/summary/summarySection'
+import MainSummarySection from '@/components/summary/summarySection'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')
@@ -42,7 +42,7 @@ export default function Results() {
       </div>
       <div className={styles.contentRow}>        
       <h2 className={styles.sectionsHeadings}>Main Summary</h2>
-        <mainSummarySection />
+        <MainSummarySection dataKey={dataKey}></MainSummarySection>
       </div>
       <div className={styles.statsContainer}>
         <h2 className={styles.sectionsHeadings}>Health Markers</h2>
