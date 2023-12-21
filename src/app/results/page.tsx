@@ -42,7 +42,7 @@ export default function Results() {
       </div>
       <div className={styles.contentRow}>        
       <h2 className={styles.sectionsHeadings}>Main Summary</h2>
-        <MainSummarySection dataKey={dataKey}></MainSummarySection>
+        <MainSummarySection dataKey={dataKey}/>
       </div>
       <div className={styles.statsContainer}>
         <h2 className={styles.sectionsHeadings}>Health Markers</h2>
