@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <div className={styles.formContainer}>
         <div className={styles.randomQuote}>
-          <p>{quote}</p>
+          <p style={{ fontFamily: 'Verdana' }}>{quote}</p>
         </div>
 
         <form>
