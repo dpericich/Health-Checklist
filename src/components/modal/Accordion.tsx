@@ -1,43 +1,11 @@
-import { useState } from 'react'
+import AccordionCard from './AccordionCard'
 
 const Accordion = ({ item }: any) => {
-  const [checked, setChecked] = useState(false)
-
   return (
     <>
-      <div className="border-2">
+      <div className="flex flex-col gap-4 w-[80%]">
         {item.notes.map((item, i) => {
-          return (
-            <div key={i} className="border-2 p-3">
-              {!checked ? (
-                <span>
-                  <p className="text-xl font-bold">{item.title}</p>
-                  <p style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
-                    {item.content.substring(0, 75)}...{' '}
-                    <button
-                      className=" text-accent"
-                      onClick={() => setChecked(!checked)}
-                    >
-                      More
-                    </button>
-                  </p>
-                </span>
-              ) : (
-                <span>
-                  <p className="text-xl font-bold">{item.title}</p>
-                  <p style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
-                    {item.content}
-                    <button
-                      className="text-accent"
-                      onClick={() => setChecked(!checked)}
-                    >
-                      Less
-                    </button>
-                  </p>
-                </span>
-              )}
-            </div>
-          )
+          return <AccordionCard key={i} item={item} />
         })}
       </div>
     </>

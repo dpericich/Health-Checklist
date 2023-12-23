@@ -9,7 +9,7 @@ import MarkerModal from '../modal/MarkerModal'
 const MarkerCard = ({ item, ageKey }: any) => {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <div className={styles.cardContainer}>
+    <div>
       <button
         className="btn btn-sm btn-primary w-full text-white  transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400"
         onClick={() => setOpenModal(!openModal)}
