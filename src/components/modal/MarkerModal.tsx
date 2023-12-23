@@ -10,7 +10,12 @@ const iconMappings = {
   flexibility: <TbStretching />,
 }
 
-const MarkerModal = ({ openModal, onClose, item }: any) => {
+const MarkerModal = ({ openModal, onClose, item, ageKey }: any) => {
+  const params = ageKey.split('_')
+  const first = params[0]
+  const gender = first[0].toUpperCase() + first.slice(1)
+  const age = params.slice(1).join(',').replace(',', '-')
+
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalHeader}>
@@ -58,8 +63,10 @@ const MarkerModal = ({ openModal, onClose, item }: any) => {
         </div>
       )}
       <Accordion item={item} />
-
-      {/* <p className={styles.modalComment}>{item.comment}</p> */}
+      <div className="fixed top-10 left-10 text-sm">
+        <p style={{ fontFamily: 'Verdana', fontWeight: 'bolder' }}>{gender}</p>{' '}
+        <p style={{ fontFamily: 'Verdana' }}>{age} years old</p>
+      </div>
       <button className={styles.button} onClick={onClose}>
         Close
       </button>
