@@ -40,7 +40,7 @@ const HealthMarkers = ({ ageKey }: HealthMarkerProps) => {
               <h1>{item.type}</h1>
             </div>
 
-            <MarkerList data={item} />
+            <MarkerList data={item} ageKey={ageKey} />
           </div>
         )
       })}

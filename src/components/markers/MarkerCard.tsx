@@ -6,7 +6,7 @@ import { useState } from 'react'
 import styles from './markers.module.css'
 import MarkerModal from '../modal/MarkerModal'
 
-const MarkerCard = ({ item }: any) => {
+const MarkerCard = ({ item, ageKey }: any) => {
   const [openModal, setOpenModal] = useState(false)
   return (
     <div className={styles.cardContainer}>
@@ -24,6 +24,7 @@ const MarkerCard = ({ item }: any) => {
           setOpenModal={setOpenModal}
           onClose={() => setOpenModal(!openModal)}
           item={item}
+          ageKey={ageKey}
         />
       ) : (
         <span></span>
