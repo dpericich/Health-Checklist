@@ -18,13 +18,18 @@ const iconMappings = {
   flexibility: <TbStretching />,
 }
 
-const HealthMarkers = () => {
-  const { healthMarkers } = healthData['female_40_59']
+type HealthMarkerProps = {
+  ageKey: string
+}
+
+const HealthMarkers = ({ ageKey }: HealthMarkerProps) => {
+  //
+  const results = healthData[ageKey]?.healthMarkers
 
   return (
     // <div className={styles.markersContainer}>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center w-[100%]">
-      {healthMarkers.map((item, i) => {
+      {results?.map((item, i) => {
         return (
           <div className={styles.listsContainer} key={i}>
             <div className={styles.listHeader}>
@@ -34,8 +39,8 @@ const HealthMarkers = () => {
 
               <h1>{item.type}</h1>
             </div>
-            {/* RENDERS MARKERLIST ------------------------ */}
-            <MarkerList data={item} />
+
+            <MarkerList data={item} ageKey={ageKey} />
           </div>
         )
       })}

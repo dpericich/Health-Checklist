@@ -9,6 +9,8 @@ import {
   useSearchParams,
 } from '../../../node_modules/next/navigation'
 import HealthMarkers from '@/components/markers/HealthMarkers'
+import AppointmentsSection from '@/components/appointments/appointmentsSection'
+import MainSummarySection from '@/components/summary/summarySection'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')
@@ -38,36 +40,26 @@ export default function Results() {
         </div>
         <div className={styles.topRowColumn}>GENDER AGE</div>
       </div>
+      <div className={styles.contentRow}>
+        <h2 className={styles.sectionsHeadings}>Main Summary</h2>
+        <MainSummarySection dataKey={dataKey} />
+      </div>
       <div className={styles.statsContainer}>
-        <h1 className={styles.healthMarkersHeading}>Health Markers</h1>
+        <h2 className={styles.sectionsHeadings}>Health Markers</h2>
         <div className={styles.statsRow}>
-          <HealthMarkers />
+          <HealthMarkers ageKey={dataKey} />
         </div>
       </div>
 
       <div className={styles.contentRow}>
-        <h2>Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          voluptatem quibusdam, hic ipsam ad assumenda dolorum, eum molestias
-          temporibus, voluptatibus dolorem? Laborum doloremque reiciendis id
-          fugiat recusandae velit earum quas?
-        </p>
-      </div>
-      <div className={styles.contentRow}>
-        <h2>Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          voluptatem quibusdam, hic ipsam ad assumenda dolorum, eum molestias
-          temporibus, voluptatibus dolorem? Laborum doloremque reiciendis id
-          fugiat recusandae velit earum quas?
-        </p>
+        <h2 className={styles.sectionsHeadings}>Appointments</h2>
+        <AppointmentsSection ageKey={dataKey} />
       </div>
       <div className={styles.contentRow}>
         <h2>Interactive Links/Buttons</h2>
         <p>Potential space for accordian, tabs, buttons etc.</p>
       </div>
-      <LinkButton link={'/'} disabled={false} text={'Update Inputs'} />
+      <LinkButton link={'/'} disabled={false} text={'Update Your Info'} />
     </div>
   )
 }
