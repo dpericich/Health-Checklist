@@ -23,52 +23,60 @@ const MarkerModal = ({ openModal, onClose, item, ageKey }: any) => {
         <span style={{ fontSize: '24pt' }}>{item.name}</span>
       </div>
       {item.aboveAverage ? (
-        <div className={styles.modalBody}>
-          <div
-            className={styles.modalRange}
-            style={{ backgroundColor: '#81b29a' }}
-          >
-            <span style={{ color: 'rgb(181, 135, 20)', fontWeight: 'bolder' }}>
-              Average
-            </span>{' '}
-            <div className={styles.rangeValues}>{item.average}</div>
+        <div className="flex flex-col justify-center items-center p-3 text-white w-[100%] my-5">
+          {/* ------------------------------------------------ */}
+
+          <div className="flex flex-col justify-center items-center p-2 bg-secondary rounded-t-lg w-2/3">
+            <div className="relative">
+              <h1 className="text-3xl relative">SUPERIOR</h1>
+            </div>
+            <div className={styles.rangeValues}>
+              {item.superior} {item.units}
+            </div>
           </div>
-          <div
-            className={styles.modalRange}
-            style={{ backgroundColor: '#44775f' }}
-          >
-            <span style={{ color: 'silver', fontWeight: 'bolder' }}>
-              Above Average
-            </span>{' '}
-            <div className={styles.rangeValues}>{item.aboveAverage}</div>
+          {/* ------------------------------------------------ */}
+          <div className="flex flex-col justify-center items-center p-2 bg-blue-800 w-2/3">
+            <div className="relative">
+              <h1 className="text-3xl relative">ABOVE AVERAGE</h1>
+            </div>
+
+            <div className={styles.rangeValues}>
+              {item.aboveAverage} {item.units}
+            </div>
           </div>
-          <div
-            className={styles.modalRange}
-            style={{ backgroundColor: '#244435' }}
-          >
-            <span style={{ color: 'gold', fontWeight: 'bolder' }}>
-              Superior
-            </span>{' '}
-            <div className={styles.rangeValues}>{item.superior}</div>
+          {/* ------------------------------------------------ */}
+          <div className="flex flex-col justify-center items-center p-2 bg-neutral rounded-b-lg w-2/3">
+            <div className="relative">
+              <h1 className="text-3xl relative">AVERAGE</h1>
+            </div>
+            <div className={styles.rangeValues}>
+              {item.average} {item.units}
+            </div>
           </div>
         </div>
       ) : (
-        <div className={styles.modalSingleAverage}>
-          Average
-          <span
-            style={{ fontFamily: 'Verdana', fontSize: '13pt', marginTop: '' }}
-          >
-            {item.average}
-          </span>
+        <div className="flex flex-col justify-center items-center p-2 bg-accent rounded-lg w-2/3 text-white my-5">
+          <div className="relative">
+            <h1 className="text-3xl relative">AVERAGE</h1>
+          </div>
+
+          <div className={styles.rangeValues}>
+            {item.average} {item.units}
+          </div>
         </div>
       )}
       <Accordion item={item} />
-      <div className="fixed top-10 left-10 text-sm">
-        <p style={{ fontFamily: 'Verdana', fontWeight: 'bolder' }}>{gender}</p>{' '}
-        <p style={{ fontFamily: 'Verdana' }}>{age} years old</p>
+      <div className="flex gap-4 justify-center items-center border-2 p-3 my-2 w-full">
+        <p style={{ fontFamily: 'Arial' }}>VideoThumb</p>
+        <a href="https://www.youtube.com/watch?v=nVsWUtN7NXI" target="_blank">
+          <img src={`src/images/${item.videoThumb}`}></img>
+        </a>
       </div>
-      <button className={styles.button} onClick={onClose}>
-        Close
+      <button
+        className="btn btn-sm btn-neutral absolute top-10 right-10 w-[40px] text-white  transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400"
+        onClick={onClose}
+      >
+        X
       </button>
     </div>
   )

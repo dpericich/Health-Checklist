@@ -19,6 +19,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '124/75',
             range: [],
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -28,6 +29,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -37,6 +39,7 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '124/75',
             range: '',
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -51,6 +54,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '24-36',
+            units: '',
             tooltip: '',
             type: 'physical',
             comment:
@@ -58,7 +62,8 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            average: 'Mins per week: 150',
+            average: '150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -66,7 +71,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -74,8 +80,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
+            average: '13:00',
             range: '12:00 - 14:00',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -85,8 +92,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
+            average: '10',
+            range: '7-14',
+            units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -99,33 +107,42 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '21-23 reps',
-            aboveAverage: '24-26 reps',
-            superior: '>29 reps',
+            average: '21-23',
+            units: 'Reps',
+            aboveAverage: '24-26',
+            superior: '>29',
             type: 'flexibility',
             test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
           },
           {
             name: 'Sit and Reach',
-            average: '21-23 in',
-            aboveAverage: '24-26 in',
-            superior: '>29 in',
+            average: '21-23',
+            units: 'Inches',
+            aboveAverage: '24-26',
+            superior: '>29',
             type: 'flexibility',
             test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
               'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
           },
           {
             name: 'Shoulder Flexibility',
-            average: '> 3 in',
-            aboveAverage: '3 - 1.5 in',
-            superior: '< -1.5 in',
+            average: '> 3',
+            units: 'Inches',
+            aboveAverage: '3 - 1.5',
+            superior: '< -1.5',
             type: 'flexibility',
             test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
               'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },
@@ -210,6 +227,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '124/75',
             range: '106/64 - 142/86',
+            units: '',
             tooltip:
               'systolic (when the heart beats)/dialstolic (when the heart rests)',
             type: 'cardiovascular',
@@ -225,6 +243,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '75',
             range: '64-85',
+            units: 'Beats per minute',
             tooltip: 'Generally, the lower the more health you on this metric',
             type: 'cardiovascular',
             notes: [
@@ -239,6 +258,8 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '55',
             range: '49-71',
+            units: '',
+            units: '',
             tooltip:
               'The higher the better, it signifies a more adaptive nervous system and more time in a physically relaxed state.',
             type: 'cardiovascular',
@@ -259,6 +280,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '24-36',
+            units: '',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -271,7 +293,8 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            average: 'Mins per week: 150',
+            average: '150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             notes: [
@@ -284,7 +307,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             notes: [
@@ -297,8 +321,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
+            average: '13:00',
             range: '12:00 - 14:00',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -313,8 +338,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
+            average: '10',
+            range: '7-14',
+            units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
             notes: [
@@ -332,9 +358,10 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '15-17 reps',
-            aboveAverage: '18-20 reps',
-            superior: '>23 reps',
+            average: '15-17',
+            units: 'Reps',
+            aboveAverage: '18-20',
+            superior: '>23',
             type: 'flexibility',
             notes: [
               {
@@ -352,9 +379,10 @@ const healthData = {
           },
           {
             name: 'Sit and Reach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            superior: '20.5 in',
+            average: '17.5',
+            units: 'Inches',
+            aboveAverage: '19.0',
+            superior: '20.5',
             type: 'flexibility',
             notes: [
               {
@@ -372,9 +400,10 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 5 in',
-            average: '5 - 1.5 in',
-            superior: '< - 1.5 in',
+            belowAverage: '> 5',
+            average: '5 - 1.5',
+            units: 'Inches',
+            superior: '< - 1.5',
             type: 'flexibility',
             notes: [
               {
@@ -473,6 +502,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '124/75',
             range: '',
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             notes: [
@@ -487,6 +517,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             notes: [
@@ -501,6 +532,7 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             notes: [
@@ -520,6 +552,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '24-36',
+            units: '',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -532,7 +565,8 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            average: 'Mins per week: 150',
+            average: '150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             notes: [
@@ -545,7 +579,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             notes: [
@@ -558,8 +593,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
+            average: '13:00',
             range: '12:00 - 14:00',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -574,8 +610,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
+            average: '10',
+            range: '7-14',
+            units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
             notes: [
@@ -593,9 +630,10 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '9-11 reps',
-            aboveAverage: '12-14 reps',
-            excellent: '>17 reps',
+            average: '9-11',
+            units: 'Reps',
+            aboveAverage: '12-14',
+            excellent: '>17',
             type: 'flexibility',
             notes: [
               {
@@ -613,9 +651,10 @@ const healthData = {
           },
           {
             name: 'Sit and Reach',
-            average: '-1 in - 4 in',
-            aboveAverage: '2 in - 5 in',
-            excellent: '> 5 in',
+            average: '-1 - 4',
+            units: 'Inches',
+            aboveAverage: '2 - 5',
+            excellent: '> 5',
             type: 'flexibility',
             notes: [
               {
@@ -633,9 +672,10 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 6 in',
-            average: '6 - 2 in',
-            superior: '< 2 in',
+            belowAverage: '> 6',
+            average: '6 - 2',
+            units: 'Inches',
+            superior: '< 2',
             type: 'flexibility',
             notes: [
               {
@@ -734,6 +774,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '124/75',
             range: '',
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -743,6 +784,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -752,6 +794,7 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -766,6 +809,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '24-36',
+            units: '',
             tooltip: '',
             type: 'physical',
             comment:
@@ -773,7 +817,8 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            average: 'Mins per week: 150',
+            average: '150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -781,7 +826,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -789,8 +835,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
+            average: '13:00',
             range: '12:00 - 14:00',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -800,8 +847,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
+            average: '10',
+            range: '7-14',
+            units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -814,9 +862,10 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '27 - 29 reps',
-            aboveAverage: '30 - 32 reps',
-            excellent: '>34 reps',
+            average: '27 - 29',
+            units: 'Reps',
+            aboveAverage: '30 - 32',
+            excellent: '>34',
             type: 'flexibility',
             test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
@@ -824,9 +873,10 @@ const healthData = {
           },
           {
             name: 'Sit and Reach',
-            average: '17.5 in',
-            aboveAverage: '19.0 in',
-            excellent: '20.5 in',
+            average: '17.5',
+            units: 'Inches',
+            aboveAverage: '19.0',
+            excellent: '20.5',
             type: 'flexibility',
             test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
@@ -834,9 +884,10 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 4.5 in',
-            average: '4.5 in',
-            superior: '< 0 in',
+            belowAverage: '> 4.5',
+            average: '4.5',
+            units: 'Inches',
+            superior: '< 0',
             type: 'flexibility',
             test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
@@ -925,6 +976,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '124/75',
             range: '',
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -934,6 +986,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -943,6 +996,7 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '124/75',
             range: '',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -957,6 +1011,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '24-36',
+            units: '',
             tooltip: '',
             type: 'physical',
             comment:
@@ -964,7 +1019,8 @@ const healthData = {
           },
           {
             name: 'Active Minutes Per Week',
-            average: 'Mins per week: 150',
+            average: '150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -972,7 +1028,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -980,8 +1037,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: 'Time: 13:00',
+            average: '13:00',
             range: '12:00 - 14:00',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -991,8 +1049,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: 'Reps: 10',
-            range: '7-14 reps',
+            average: '10',
+            range: '7-14',
+            units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
             comment:
@@ -1005,9 +1064,10 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '21 - 23 reps',
-            aboveAverage: '24 - 26 reps',
-            excellent: '>29 reps',
+            average: '21 - 23',
+            units: 'Reps',
+            aboveAverage: '24 - 26',
+            excellent: '>29',
             type: 'flexibility',
             test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
@@ -1015,9 +1075,10 @@ const healthData = {
           },
           {
             name: 'Sit and Reach',
-            average: '15 in',
-            aboveAverage: '17 in',
-            excellent: '19 in',
+            average: '15',
+            units: 'Inches',
+            aboveAverage: '17',
+            excellent: '19',
             type: 'flexibility',
             test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
@@ -1025,9 +1086,10 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 6.5 in',
-            average: '6.5 - 1.5 in',
-            superior: '< - 1.5 in',
+            belowAverage: '> 6.5',
+            average: '6.5 - 1.5',
+            units: 'Inches',
+            superior: '< - 1.5',
             type: 'flexibility',
             test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
@@ -1116,6 +1178,7 @@ const healthData = {
             name: 'Blood Pressure',
             average: '133/72',
             range: '115/60-151/84',
+            units: '',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -1125,6 +1188,7 @@ const healthData = {
             name: 'Resting Heart Rate',
             average: '74',
             range: '64-85',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -1134,6 +1198,7 @@ const healthData = {
             name: 'Heart Rate Variability',
             average: '52',
             range: '49-65',
+            units: 'Beats per minute',
             tooltip: '',
             type: 'cardiovascular',
             comment:
@@ -1148,6 +1213,7 @@ const healthData = {
             name: 'BMI',
             average: '29',
             range: '23-35',
+            units: '',
             tooltip: '',
             type: 'physical',
             comment:
@@ -1156,6 +1222,7 @@ const healthData = {
           {
             name: 'Active Minutes Per Week',
             average: 'Mins per week: 150',
+            units: 'Minutes per week',
             tooltip: 'minutes per week',
             type: 'physical',
             comment:
@@ -1163,7 +1230,8 @@ const healthData = {
           },
           {
             name: 'Strength Training',
-            average: 'Sessions per week: 2',
+            average: '2',
+            units: 'Sessions per week',
             tooltip: 'sessions per week',
             type: 'physical',
             comment:
@@ -1173,6 +1241,7 @@ const healthData = {
             name: 'Mile Time',
             average: '12:43',
             range: '11:36 - 15:08',
+            units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
             kilo_range: '7:00 - 8:30',
@@ -1184,6 +1253,7 @@ const healthData = {
             name: 'Push Ups',
             average: '9',
             range: '6-13',
+            units: 'Reps',
             tooltip: 'standard push up',
             type: 'physical',
             comment:
@@ -1196,9 +1266,10 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '15 - 17 reps',
-            aboveAverage: '18 - 20 reps',
-            excellent: '>23 reps',
+            average: '15 - 17',
+            units: 'Reps',
+            aboveAverage: '18 - 20',
+            excellent: '>23',
             type: 'flexibility',
             test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
             comment:
@@ -1206,9 +1277,10 @@ const healthData = {
           },
           {
             name: 'Sit and Reach',
-            average: '13 in',
-            aboveAverage: '14.5 in',
-            excellent: '16 in',
+            average: '13',
+            units: 'Inches',
+            aboveAverage: '14.5',
+            excellent: '16',
             type: 'flexibility',
             test: 'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
             comment:
@@ -1216,9 +1288,10 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            belowAverage: '> 7.5 in',
-            average: '7.5 - 2 in',
-            superior: '< 2 in',
+            belowAverage: '> 7.5',
+            average: '7.5 - 2',
+            units: 'Inches',
+            superior: '< 2',
             type: 'flexibility',
             test: 'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
             comment:
