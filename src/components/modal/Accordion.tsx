@@ -1,42 +1,44 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Accordion = ({ item }: any) => {
   const [checked, setChecked] = useState(false)
-  const [test, setTest] = useState([])
-
-  useEffect(() => {
-    let result = []
-    result.push(item.test)
-    result.push(item.comment)
-    setTest(result)
-    console.log(result)
-  }, [])
 
   return (
     <>
       <div className="border-2">
-        <p>Why?</p>
-        {!checked ? (
-          <p>
-            {item.comment.substring(0, 75)}...{' '}
-            <button
-              className="btn btn-xs btn-accent"
-              onClick={() => setChecked(!checked)}
-            >
-              More
-            </button>
-          </p>
-        ) : (
-          <p>
-            {item.comment}...{' '}
-            <button
-              className="btn btn-xs btn-accent"
-              onClick={() => setChecked(!checked)}
-            >
-              Less
-            </button>
-          </p>
-        )}
+        {item.notes.map((item, i) => {
+          return (
+            <div key={i} className="border-2 p-3">
+              {!checked ? (
+                <span>
+                  <p className="text-xl font-bold">{item.title}</p>
+                  <p style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
+                    {item.content.substring(0, 75)}...{' '}
+                    <button
+                      className=" text-accent"
+                      onClick={() => setChecked(!checked)}
+                    >
+                      More
+                    </button>
+                  </p>
+                </span>
+              ) : (
+                <span>
+                  <p className="text-xl font-bold">{item.title}</p>
+                  <p style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
+                    {item.content}
+                    <button
+                      className="text-accent"
+                      onClick={() => setChecked(!checked)}
+                    >
+                      Less
+                    </button>
+                  </p>
+                </span>
+              )}
+            </div>
+          )
+        })}
       </div>
     </>
   )
