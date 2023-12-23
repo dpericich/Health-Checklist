@@ -10,7 +10,7 @@ export const genders: string[] = [
 ];
 
 export const formatAgeGroup = (ageGroup: string): string => {
-    return ageGroup.replaceAll(" ", "");
+    return ageGroup.replaceAll(/\+|\s/g, "");
 };
 
 export const formatGenderName = (gender: string): string => {
