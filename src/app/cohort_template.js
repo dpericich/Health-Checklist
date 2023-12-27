@@ -4,7 +4,7 @@ const healthData = {
     sex: 'Female',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        "When you’re in your 20s, you likely look (and feel) young and strong, bursting at the seams with energy and sex drive. However, it’s important to take some preventative steps. These include regular exercise, protecting your skin from UV rays, maintaining a healthy weight, avoiding excess alcohol, and saying no to smoking. Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
       keyPoints: [
         'Bone density starts to decrease .5%/.per year.',
         'Unintentional weight gain and lean muscle loss.',
@@ -64,8 +64,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
-            units: '',
+            aboveAverage: '27',
+            superior: '24',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -106,8 +107,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
-            range: '12:00 - 14:00',
+            average: '12',
+            aboveAverage: '10',
+            superior: '8',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -123,8 +125,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: '7',
+            aboveAverage: '10',
+            superior: '14',
             units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
@@ -143,35 +146,43 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '21-23',
+            average: '22',
             units: 'Reps',
-            aboveAverage: '24-26',
-            superior: '>29',
+            aboveAverage: '25',
+            superior: '29',
             type: 'flexibility',
-            test: "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-            comment:
-              'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+            notes: [
+              {
+                title: 'Why?',
+                content:
+                  'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
+              },
+              {
+                title: 'Test',
+                content:
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
+              },
+            ],
             videoThumb: 'squatTest.png',
             videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
           },
           {
             name: 'Sit and Reach',
-            average: '21-23',
+            average: '21',
             units: 'Inches',
-            aboveAverage: '24-26',
-            superior: '>29',
+            aboveAverage: '25',
+            superior: '29',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
+              },
+              {
+                title: 'Test',
+                content:
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
             ],
 
@@ -180,22 +191,21 @@ const healthData = {
           },
           {
             name: 'Shoulder Flexibility',
-            average: '> 3',
+            average: '3',
             units: 'Inches',
-            aboveAverage: '3 - 1.5',
-            superior: '< -1.5',
+            aboveAverage: '1.5',
+            superior: '1',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
+              },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
               },
             ],
 
@@ -270,7 +280,7 @@ const healthData = {
     sex: 'Female',
     summary: {
       description:
-        'Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. It is very important to lift weights, and get good amounts of cardiovascular exercise to metigate the risks associated with menopause.',
+        'Your 40s are a time you’ll likely continue the trend of lean tissue loss and increases in body fat, especially around your midsection. Fertility in women decreases as well, and at age 40 women have just a 5 percent chance of getting pregnant each month, according to the American Society for Reproductive Medicine. Women in their late 40s may begin the process of menopause, and should be screened for breast cancer using mammograms beginning at age 40, suggests MedlinePlus. A woman’s risk for osteoporosis increases, as bone density tends to decrease with age (especially in women). You may begin to notice (if you haven’t already) hair loss, gray hairs, and wrinkly or sagging skin in your 40s.',
       keyPoints: [
         'Bone density starts to decrease .5%/.per year or more.',
         "Prioritize a fitness routine with weights and cardio if you haven't.",
@@ -337,8 +347,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
-            units: '',
+            aboveAverage: '27',
+            superior: '24',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -379,8 +390,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
-            range: '12:00 - 14:00',
+            average: '13',
+            aboveAverage: '11',
+            superior: '9',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -396,8 +408,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: '6',
+            aboveAverage: '9',
+            superior: '10',
             units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
@@ -416,67 +429,70 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '15-17',
+            average: '15',
             units: 'Reps',
-            aboveAverage: '18-20',
-            superior: '>23',
+            aboveAverage: '19',
+            superior: '23',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
               },
+              {
+                title: 'Test',
+                content:
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
+              },
             ],
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
           },
           {
             name: 'Sit and Reach',
             average: '17.5',
             units: 'Inches',
-            aboveAverage: '19.0',
-            superior: '20.5',
+            aboveAverage: '19',
+            superior: '20',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
               },
-            ],
-          },
-          {
-            name: 'Shoulder Flexibility',
-            belowAverage: '> 5',
-            average: '5 - 1.5',
-            units: 'Inches',
-            superior: '< - 1.5',
-            type: 'flexibility',
-
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
+            ],
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            average: '5',
+            aboveAverage: '3',
+            units: 'Inches',
+            superior: '1',
+            type: 'flexibility',
 
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
               },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+              },
             ],
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },
@@ -546,7 +562,7 @@ const healthData = {
     sex: 'Female',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        'The 60s are golden years for many adults — working less, grandparenting, and enjoying life. Women generally gain weight until age 65; then slowly shed pounds due to muscle losses. Poor eyesight and hearing loss may become concerns. Chronic disease risks (like heart disease, cancer, diabetes, and osteoporosis) and lean muscle loss are still on your radar at age 60. You may begin to notice arthritis, stiff joints, and increased fatigue. You’ll generally experience height loss at a more rapid rate beginning in your 70s, says MedlinePlus. Furthermore, dental problems, dementia (forgetfulness), falls, and bone fractures may be concerns in your 70s. You might notice increased fatigue and sensitivity to cold temperatures. And of course, heart disease is still a concern as well.',
       keyPoints: [
         'Bone density starts to decrease .5%/.per year.',
         'Unintentional weight gain and lean muscle loss.',
@@ -610,8 +626,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
-            units: '',
+            aboveAverage: '27',
+            superior: '24',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -652,8 +669,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
-            range: '12:00 - 14:00',
+            average: '15',
+            aboveAverage: '13',
+            superior: '12',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -669,8 +687,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: '5',
+            aboveAverage: '7',
+            superior: '9',
             units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
@@ -689,66 +708,69 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '9-11',
+            average: '9',
             units: 'Reps',
-            aboveAverage: '12-14',
-            superior: '>17',
+            aboveAverage: '12',
+            superior: '17',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
               },
-            ],
-          },
-          {
-            name: 'Sit and Reach',
-            average: '-1 - 4',
-            units: 'Inches',
-            aboveAverage: '2 - 5',
-            superior: '> 5',
-            type: 'flexibility',
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
               },
-
+            ],
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
+          },
+          {
+            name: 'Sit and Reach',
+            average: '2',
+            units: 'Inches',
+            aboveAverage: '4',
+            superior: '6',
+            type: 'flexibility',
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
               },
-            ],
-          },
-          {
-            name: 'Shoulder Flexibility',
-            belowAverage: '> 6',
-            average: '6 - 2',
-            units: 'Inches',
-            superior: '< 2',
-            type: 'flexibility',
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
-
+            ],
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            average: '6',
+            aboveAverage: '4',
+            units: 'Inches',
+            superior: '1',
+            type: 'flexibility',
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
               },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+              },
             ],
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },
@@ -818,7 +840,7 @@ const healthData = {
     sex: 'Male',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        'Even if you feel healthy, it’s important to establish a relationship with a primary care doctor. This can be your go-to doctor for every question and concern. Lots of changes happen in your 20s. Many men are on their own after previously living at home or college. That means a new diet. Maybe some long, eight-hour workdays sitting in front of a computer. Dramatic diet and exercise changes can affect your health. Many men in their 30s start encountering some orthopedic problems. The body stops doesn’t heal quite as quickly as it used to. You’ll also notice some metabolism changes. You might have to work a little harder to maintain muscle mass and to keep off the extra pounds. Your doctor will help you stay active and healthy.',
       keyPoints: [
         'Bone density starts to decrease .5%/.per year.',
         'Unintentional weight gain and lean muscle loss.',
@@ -882,8 +904,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
-            units: '',
+            aboveAverage: '27',
+            superior: '24',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -924,8 +947,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
-            range: '12:00 - 14:00',
+            average: '10',
+            aboveAverage: '9',
+            superior: '7',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -942,7 +966,8 @@ const healthData = {
           {
             name: 'Push Ups',
             average: '10',
-            range: '7-14',
+            aboveAverage: '14',
+            superior: '18',
             units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
@@ -961,65 +986,68 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '27 - 29',
+            average: '27',
             units: 'Reps',
-            aboveAverage: '30 - 32',
-            superior: '>34',
+            aboveAverage: '31',
+            superior: '35',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
               },
-            ],
-          },
-          {
-            name: 'Sit and Reach',
-            average: '17.5',
-            units: 'Inches',
-            aboveAverage: '19.0',
-            superior: '20.5',
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
               },
-
+            ],
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
+          },
+          {
+            name: 'Sit and Reach',
+            average: '17',
+            units: 'Inches',
+            aboveAverage: '19',
+            superior: '21',
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
               },
-            ],
-          },
-          {
-            name: 'Shoulder Flexibility',
-            belowAverage: '> 4.5',
-            average: '4.5',
-            units: 'Inches',
-            superior: '< 0',
-            type: 'flexibility',
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
-
+            ],
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            average: '5',
+            aboveAverage: '4',
+            units: 'Inches',
+            superior: '2',
+            type: 'flexibility',
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
               },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+              },
             ],
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },
@@ -1089,7 +1117,7 @@ const healthData = {
     sex: 'Male',
     summary: {
       description:
-        "Women lose .5% bone density/yr starting in mid 30s. By post menopause up to 1.5% for average women, 3-5%/yr for those more prone to this issue. Most women begin to experience unintentional weight gain and loss of lean muscle mass. They may feel testy and short, tired and annoyed. They find it difficult to get a good night's sleep.",
+        'Your risk for heart disease goes up in your 40s if you’re a man; Harvard Health Publications says that up to 10 percent of all heart attacks occur before age 45, particularly in men.',
       keyPoints: [
         'Bone density starts to decrease .5%/.per year.',
         'Unintentional weight gain and lean muscle loss.',
@@ -1153,8 +1181,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '24-36',
-            units: '',
+            aboveAverage: '27',
+            superior: '24',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -1195,8 +1224,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '13:00',
-            range: '12:00 - 14:00',
+            average: '11',
+            aboveAverage: '9',
+            superior: '8',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -1212,8 +1242,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '10',
-            range: '7-14',
+            average: '8',
+            aboveAverage: '11',
+            superior: '14',
             units: 'Reps',
             tooltip: 'bent knee',
             type: 'physical',
@@ -1232,24 +1263,25 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '21 - 23',
+            average: '21',
             units: 'Reps',
-            aboveAverage: '24 - 26',
-            superior: '>29',
+            aboveAverage: '25',
+            superior: '30',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
               },
+              {
+                title: 'Test',
+                content:
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
+              },
             ],
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
           },
           {
             name: 'Sit and Reach',
@@ -1260,38 +1292,40 @@ const healthData = {
             type: 'flexibility',
             notes: [
               {
-                title: 'Test',
-                content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
-              },
-
-              {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
               },
-            ],
-          },
-          {
-            name: 'Shoulder Flexibility',
-            belowAverage: '> 6.5',
-            average: '6.5 - 1.5',
-            units: 'Inches',
-            superior: '< - 1.5',
-            type: 'flexibility',
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
-
+            ],
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            average: '7',
+            aboveAverage: '4',
+            units: 'Inches',
+            superior: '1',
+            type: 'flexibility',
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
               },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+              },
             ],
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },
@@ -1425,8 +1459,9 @@ const healthData = {
           {
             name: 'BMI',
             average: '29',
-            range: '23-35',
-            units: '',
+            aboveAverage: '27',
+            superior: '23',
+            units: 'Score',
             tooltip: '',
             type: 'physical',
             notes: [
@@ -1467,8 +1502,9 @@ const healthData = {
           },
           {
             name: 'Mile Time',
-            average: '12:43',
-            range: '11:36 - 15:08',
+            average: '13',
+            aboveAverage: '11',
+            superior: '10',
             units: 'Minutes',
             tooltip: 'minutes',
             type: 'physical',
@@ -1484,8 +1520,9 @@ const healthData = {
           },
           {
             name: 'Push Ups',
-            average: '9',
-            range: '6-13',
+            average: '6',
+            aboveAverage: '8',
+            superior: '12',
             units: 'Reps',
             tooltip: 'standard push up',
             type: 'physical',
@@ -1504,67 +1541,70 @@ const healthData = {
         markers: [
           {
             name: 'Squat Rep Test',
-            average: '15 - 17',
+            average: '15',
             units: 'Reps',
-            aboveAverage: '18 - 20',
-            superior: '>23',
+            aboveAverage: '19',
+            superior: '24',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.',
               },
+              {
+                title: 'Test',
+                content:
+                  "Stand in front of a chair or bench with your feet at shoulder's width apart, facing away from it. Place your hands on your hips. Squat down and lightly touch the chair before standing back up. A good sized chair is one that makes your knees at right angles when you are sitting. Keep doing this until you're fatigued.",
+              },
             ],
+            videoThumb: 'squatTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=nVsWUtN7NXI',
           },
           {
             name: 'Sit and Reach',
             average: '13',
             units: 'Inches',
-            aboveAverage: '14.5',
+            aboveAverage: '14',
             superior: '16',
             type: 'flexibility',
             notes: [
-              {
-                title: 'Test',
-                content:
-                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
-              },
-
               {
                 title: 'Why?',
                 content:
                   'Hamstring flexibility is highly desirable in most sports involving running and is an integral part of activities such as dancing, gymnastics and martial arts.The desire for hamstring flexibility in running sports is primarily aimed at reducing muscle tears or strains and improving running efficiency, agility and speed.',
               },
-            ],
-          },
-          {
-            name: 'Shoulder Flexibility',
-            belowAverage: '> 7.5',
-            average: '7.5 - 2',
-            units: 'Inches',
-            superior: '< 2',
-            type: 'flexibility',
-
-            notes: [
               {
                 title: 'Test',
                 content:
-                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+                  'Sit on the floor with legs stretched out straight ahead. The soles of the feet are placed flat against the box. Both knees should be locked and pressed flat to the floor. With the palms facing downwards, and the hands on top of each other or side by side, the subject reaches forward along the measuring line as far as possible. Reach out and hold that position for at least one-two seconds while the distance is recorded.',
               },
+            ],
+            videoThumb: 'sitReachTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=S-UWdErmXuk',
+          },
+          {
+            name: 'Shoulder Flexibility',
+            average: '8',
+            aboveAverage: '5',
+            units: 'Inches',
+            superior: '2',
+            type: 'flexibility',
 
+            notes: [
               {
                 title: 'Why?',
                 content:
                   'Shoulder overhead mobility is an essential human movement that you should strive to always possess! Its a very valuable asset, especially for overhead athletes considering a reduced total range of motion at the shoulder joint has been identified as a risk factor for shoulder injury (1).',
               },
+              {
+                title: 'Test',
+                content:
+                  'In a standing position, place one hand behind the head and back over the shoulder, and reach as far as possible down the middle of your back. Place the other arm behind your back, palm facing outward and fingers upward. Reach up as far as possible attempting to touch both hands. An assistant is required to direct the subject so that the fingers are aligned, and to measure the distance between the tips of the middle fingers.',
+              },
             ],
+            videoThumb: 'shoulderTest.png',
+            videoURL: 'https://www.youtube.com/watch?v=usmIvGlCzNk',
           },
         ],
       },

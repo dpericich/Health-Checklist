@@ -9,9 +9,9 @@ const AccordionCard = ({ item }) => {
           <span>
             <p className="text-2xl font-bold">{item.title}</p>
             <p style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
-              {item.content.substring(0, 75)}...{' '}
+              {item.content.substring(0, 75)}{' '}
               <button
-                className=" text-accent"
+                className="text-accent"
                 onClick={() => setChecked(!checked)}
               >
                 More

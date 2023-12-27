@@ -34,7 +34,7 @@ export default function Results() {
   return (
     // I want to add basic accordian items here
     <div className={styles.checklistResultsContainer}>
-      <div className="flex justify-center items-center w-[100%] h-[100px] bg-neutral rounded-b-lg border-t-8 border-primary">
+      <div className="flex justify-center items-center bg-neutral rounded-b-lg border-t-8 border-primary p-5 w-[100%]">
         <GenderAge ageKey={dataKey} />
       </div>
       <div className={styles.contentRow}>
