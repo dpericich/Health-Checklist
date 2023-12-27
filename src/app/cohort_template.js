@@ -174,10 +174,6 @@ const healthData = {
           link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm',
         },
         {
-          name: 'Colorectal Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm',
-        },
-        {
           name: 'Eye Exam',
           link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101',
         },
@@ -728,6 +724,14 @@ const healthData = {
           name: 'Eye Exam',
           link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101',
         },
+        {
+          name: 'Osteoporosis Exam',
+          link: 'https://www.mayoclinic.org/tests-procedures/bone-density-test/about/pac-20385273'
+        },
+        {
+          name: 'Skin Exam',
+          link: 'https://medlineplus.gov/lab-tests/skin-cancer-screening/'
+        }
       ],
       dentalCheckups: [
         {
