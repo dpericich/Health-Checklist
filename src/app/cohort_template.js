@@ -184,7 +184,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
@@ -459,7 +459,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
@@ -731,7 +731,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
@@ -933,7 +933,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
@@ -1135,7 +1135,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
@@ -1337,7 +1337,7 @@ const healthData = {
       ],
       dentalCheckups: [
         {
-          name: 'Annual Dental Appointment',
+          name: 'Bi-Annual Dental Appointment',
           link: 'https://my.clevelandclinic.org/health/treatments/11187-dental-check-up',
         },
       ],
