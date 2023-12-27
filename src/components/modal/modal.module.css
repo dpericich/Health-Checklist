@@ -22,49 +22,7 @@
   align-items: center;
   font-size: 80pt;
 }
-/* .modalBody {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 10px;
-  width: 80%;
-  padding: 10px 7px 10px 7px;
-  color: white;
-} */
-/* .modalRange {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 16pt;
-  width: 33%;
-  height: 80px;
-  padding: 5px;
-  box-shadow: 2px 2px 5px gray;
-  border-radius: 0.25rem;
-} */
-.rangeValues {
-  margin-top: 5px;
-  font-family: 'Verdana';
-  font-size: 18pt;
-}
-/* .modalSingleAverage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 16pt;
-  width: 33%;
-  height: 80px;
-  padding: 5px;
-  margin-bottom: 15px;
-  background-color: #81b29a;
-  color: white;
-  box-shadow: 2px 2px 5px gray;
-  border-radius: 0.25rem;
-  margin-top: 20px;
-} */
+
 .modalComment {
   text-align: center;
   background-color: white;
@@ -76,23 +34,6 @@
   font-size: 14pt;
   width: 90%;
 }
-/* .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  text-align: center;
-  padding: 1rem 1.5rem;
-  margin: 1rem;
-  background-color: var(--primary-font-color);
-  color: white;
-  border: 2pt solid transparent;
-  border-radius: 6px;
-  height: 20px;
-  width: 10%;
-} */
 
 .button:hover,
 .button:active {
