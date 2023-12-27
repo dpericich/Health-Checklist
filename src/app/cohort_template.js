@@ -915,10 +915,6 @@ const healthData = {
           link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html',
         },
         {
-          name: 'Colorectal Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm',
-        },
-        {
           name: 'Eye Exam',
           link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101',
         },
@@ -1310,6 +1306,18 @@ const healthData = {
           name: 'Eye Exam',
           link: 'https://www.aao.org/eye-health/tips-prevention/eye-exams-101',
         },
+        {
+          name: 'Prostate Cancer Screening',
+          link: 'https://www.cdc.gov/cancer/prostate/basic_info/screening.htm'
+        },
+        {
+          name: 'Skin Exam',
+          link: 'https://medlineplus.gov/lab-tests/skin-cancer-screening/'
+        },
+        {
+          name: 'Testicular Exam',
+          link: 'https://www.mayoclinic.org/tests-procedures/testicular-exam/about/pac-20385252'
+        }
       ],
       dentalCheckups: [
         {
