@@ -915,14 +915,6 @@ const healthData = {
           link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html',
         },
         {
-          name: 'Breast Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm',
-        },
-        {
-          name: 'Cervical Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm',
-        },
-        {
           name: 'Colorectal Cancer Screening',
           link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm',
         },
@@ -1117,14 +1109,6 @@ const healthData = {
           link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html',
         },
         {
-          name: 'Breast Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm',
-        },
-        {
-          name: 'Cervical Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm',
-        },
-        {
           name: 'Colorectal Cancer Screening',
           link: 'https://www.cdc.gov/cancer/colorectal/basic_info/screening/tests.htm',
         },
@@ -1317,14 +1301,6 @@ const healthData = {
         {
           name: 'Diabetes Screening',
           link: 'https://www.cdc.gov/diabetes/basics/getting-tested.html',
-        },
-        {
-          name: 'Breast Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/breast/basic_info/screening.htm',
-        },
-        {
-          name: 'Cervical Cancer Screening',
-          link: 'https://www.cdc.gov/cancer/cervical/basic_info/screening.htm',
         },
         {
           name: 'Colorectal Cancer Screening',
