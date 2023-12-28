@@ -11,9 +11,9 @@ type AppointmentsSectionProps = {
 const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
     return(
         <div className="flex flex-col w-full">
-            <div className='flex flex-row w-full items-center'>
+            <div className='flex flex-row w-full items-center mt-2 mb-2'>
                 <MdHealthAndSafety style={{ fontSize: '40px', margin: '10px 10px 10px 0' }} />
-                Doctor Appointments
+                <span className='text-3xl'>Doctor Appointments</span>
             </div>
             <div className="grid card p-6 border-2 border-primary-font-color border-solid rounded-box shadow-lg">
                 <ul>
@@ -27,9 +27,9 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
                 </ul>
             </div>
             <div className="divider mt-10 mb-6"></div> 
-            <div className='flex flex-row w-full items-center'>
+            <div className='flex flex-row w-full items-center mb-2'>
                 <TbDental style={{ fontSize: '40px', margin: '10px 10px 10px 0' }} />
-                <span>Dental Appointments</span>
+                <span className='text-3xl'>Dental Appointments</span>
             </div>
             <div className="grid card p-6 border-2 border-primary-font-color border-solid rounded-box shadow-lg">
                 <ul>
