@@ -2,8 +2,9 @@ import React from 'react'
 
 const GenderAge = ({ ageKey }) => {
   const params = ageKey.split('_')
-  let first = params[0]
-  const gender = first[0]?.toUpperCase() + first.slice(1)
+  const unformattedGender = params[0]
+  const gender =
+    unformattedGender[0]?.toUpperCase() + unformattedGender.slice(1)
   const age = params.slice(1).join(',').replace(',', '-')
 
   return (

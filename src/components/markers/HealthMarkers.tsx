@@ -26,6 +26,8 @@ const HealthMarkers = ({ ageKey }: HealthMarkerProps) => {
   //
   const results = healthData[ageKey]?.healthMarkers
 
+  console.log('This is results', results)
+
   return (
     // <div className={styles.markersContainer}>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center w-[100%]">

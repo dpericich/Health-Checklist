@@ -12,12 +12,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-background-color": "var(--primary-background-color)",
-        "secondary-background-color": "var(--secondary-background-color)",
-        "primary-font-color": "var(--primary-font-color)",
-        "secondary-font-color": "var(--secondary-font-color)",
-        "tertiary-font-color": "var(--tertiary-font-color)"
-      }
+        'primary-background-color': 'var(--primary-background-color)',
+        'secondary-background-color': 'var(--secondary-background-color)',
+        'primary-font-color': 'var(--primary-font-color)',
+        'secondary-font-color': 'var(--secondary-font-color)',
+        'tertiary-font-color': 'var(--tertiary-font-color)',
+      },
+    },
+    fontFamily: {
+      sans: ['Arial'],
     },
   },
   plugins: [daisyui],
