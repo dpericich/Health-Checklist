@@ -21,7 +21,8 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
                     <ul>
                         { healthData[ageKey]?.appointments.doctorCheckups?.map(item => 
                             <a key={item.name} href={item.link} target="_blank">
-                                <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4">
+                                <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4"
+                                    style={{ fontFamily: 'Verdana' }}>
                                     {item.name}
                                 </li>
                             </a>    
@@ -41,7 +42,8 @@ const AppointmentsSection = ({ ageKey }: AppointmentsSectionProps) => {
                     <ul>
                         { healthData[ageKey]?.appointments.dentalCheckups?.map(item => 
                             <a key={item.name} href={item.link} target="_blank">
-                                <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4">
+                                <li className="btn btn-primary block text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 flex flex-row align-center m-4" 
+                                    style={{ fontFamily: 'Verdana' }}>
                                     {item.name}
                                 </li>
                             </a>    
