@@ -11,6 +11,7 @@ import {
 import HealthMarkers from '@/components/markers/HealthMarkers'
 import AppointmentsSection from '@/components/appointments/appointmentsSection'
 import MainSummarySection from '@/components/summary/summarySection'
+import GenderAge from '../../components/GenderAge'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')
@@ -33,12 +34,8 @@ export default function Results() {
   return (
     // I want to add basic accordian items here
     <div className={styles.checklistResultsContainer}>
-      <h1>Health Checklist Results</h1>
-      <div className={styles.topRow}>
-        <div className={styles.topRowColumn}>
-          <IoPersonCircleSharp style={{ fontSize: '100pt' }} />
-        </div>
-        <div className={styles.topRowColumn}>GENDER AGE</div>
+      <div className="flex justify-center items-center bg-neutral border-8 rounded-md border-primary p-5 w-[100%]">
+        <GenderAge ageKey={dataKey} />
       </div>
       <div className={styles.contentRow}>
         <h2 className={styles.sectionsHeadings}>Main Summary</h2>

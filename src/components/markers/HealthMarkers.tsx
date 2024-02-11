@@ -26,18 +26,23 @@ const HealthMarkers = ({ ageKey }: HealthMarkerProps) => {
   //
   const results = healthData[ageKey]?.healthMarkers
 
+  console.log('This is results', results)
+
   return (
     // <div className={styles.markersContainer}>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center w-[100%]">
       {results?.map((item, i) => {
         return (
-          <div className={styles.listsContainer} key={i}>
+          <div
+            className="flex flex-col justify-center items-center border-2 border-neutral rounded-xl p-5"
+            key={i}
+          >
             <div className={styles.listHeader}>
               <div style={{ fontSize: '40px' }}>
                 {iconMappings[`${item.type}`]}
               </div>
 
-              <h1>{item.type}</h1>
+              <h1 className="text-3xl">{item.type}</h1>
             </div>
 
             <MarkerList data={item} ageKey={ageKey} />
