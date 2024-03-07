@@ -11,7 +11,6 @@ import {
 } from './index_data'
 
 import { quotes } from './cohort_template'
-
 import { TbHealthRecognition } from 'react-icons/tb'
 
 export default function Home() {
@@ -30,14 +29,8 @@ export default function Home() {
     setQuote(quotes[Math.floor(Math.random() * 7)])
   }, [])
 
-  const handleSubmit = () => {
-    navigate(`/results?age=${ageGroup}&gender=${gender}`)
-  }
-
   return (
-    // <div className={styles.userInputContainer}>
     <div className="flex flex-col justify-center items-center w-[100%] h-screen bg-gradient-to-r from-sky-700 to-blue-900">
-      {/* <div className={styles.pageHeading}> */}
       <div className="flex gap-2 justify-center items-center p-5 w-[100%] font-sans">
         <span className="text-white text-2xl md:text-6xl">
           <TbHealthRecognition className="text-orange-500" />
@@ -46,15 +39,12 @@ export default function Home() {
           HEALTH CHECKLIST
         </p>
       </div>
-      {/* <div className={styles.formContainer}> */}
       <div className="flex flex-col justify-center items-center border-8 border-white bg-zinc-200 rounded-xl shadow-inner shadow-zinc-500 w-[80%] md:w-[60%] max-w-[600px] p-5 md:p-10">
-        {/* <div className={styles.randomQuote}> */}
         <div className="flex flex-col justify-center items-center p-3 shadow-inner shadow-zinc-600 bg-white rounded-md mb-5">
           <p className="font-sans">{quote}</p>
         </div>
 
         <form className="flex flex-col justify-center items-center w-[100%]">
-          {/* <div className={styles.formInput}> */}
           <div className="grid grid-cols-1 md:grid-cols-2 p-3 shadow-inner shadow-zinc-200 bg-zinc-100 font-sans w-[100%] my-2">
             <span className="flex items-center font-serif font-bold text-md md:text-xl">
               Select Your Age Range:
@@ -75,7 +65,6 @@ export default function Home() {
               ))}
             </select>
           </div>
-          {/* <div className={styles.formInput}> */}
           <div className="grid grid-cols-1 md:grid-cols-2 p-3 shadow-inner shadow-zinc-200 bg-zinc-100 font-sans w-[100%] my-2">
             <span className="flex items-center font-serif font-bold text-md md:text-xl">
               Select Your Gender:
@@ -101,12 +90,6 @@ export default function Home() {
             disabled={disabled}
             text={'GET RESULTS'}
           />
-          {/* <button
-            className="btn btn-primary border-zinc-700 bg-zinc-700 text-gray-200 font-bold  p-3 rounded-md w-[100%] hover:bg-zinc-500 hover:border-zinc-500 cursor-not-allowed font-sans mt-4"
-            disabled={disabled}
-          >
-            GET RESULTS
-          </button> */}
         </form>
       </div>
     </div>

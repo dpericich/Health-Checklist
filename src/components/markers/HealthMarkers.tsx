@@ -25,8 +25,6 @@ const HealthMarkers = ({ ageKey }: HealthMarkerProps) => {
   //
   const results = healthData[ageKey]?.healthMarkers
 
-  console.log('This is results', results)
-
   return (
     <div className="w-[90%] bg-zinc-400 border-8 border-zinc-300">
       <div className="flex flex-col justify-left items-center">
