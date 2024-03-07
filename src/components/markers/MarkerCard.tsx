@@ -9,11 +9,10 @@ import MarkerModal from '../modal/MarkerModal'
 const MarkerCard = ({ item, ageKey }: any) => {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <div>
+    <div className="flex justify-center items-center my-2">
       <button
-        className="btn btn-sm btn-primary w-full text-white  transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400"
+        className="flex justify-center items-center bg-orange-500 border-white rounded-md h-[35px] w-[90%] md:w-[60%] text-white transition ease-in-out delay-25 hover:scale-105 shadow-md shadow-gray-400 my-2 font-serif"
         onClick={() => setOpenModal(!openModal)}
-        style={{ fontFamily: 'Verdana' }}
       >
         {item.name}
       </button>

@@ -12,6 +12,7 @@ import HealthMarkers from '@/components/markers/HealthMarkers'
 import AppointmentsSection from '@/components/appointments/appointmentsSection'
 import MainSummarySection from '@/components/summary/summarySection'
 import GenderAge from '../../components/GenderAge'
+import Footer from '../../components/Footer'
 
 const formatAgeGenderKey = (ageGroup: string, gender: string): string => {
   const formattedAgeGroup = ageGroup.replace('-', '_')
@@ -33,30 +34,20 @@ export default function Results() {
 
   return (
     // I want to add basic accordian items here
-    <div className={styles.checklistResultsContainer}>
-      <div className="flex justify-center items-center bg-neutral border-8 rounded-md border-primary p-5 w-[100%]">
+
+    // <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-[100%] bg-black/80">
+      <div className="bg-gradient-to-r from-sky-700 to-blue-800 flex justify-center items-center p-5 w-[100%] h-[100]">
         <GenderAge ageKey={dataKey} />
       </div>
-      <div className={styles.contentRow}>
-        <h2 className={styles.sectionsHeadings}>Main Summary</h2>
-        <MainSummarySection dataKey={dataKey} />
-      </div>
-      <div className={styles.statsContainer}>
-        <h2 className={styles.sectionsHeadings}>Health Markers</h2>
-        <div className={styles.statsRow}>
-          <HealthMarkers ageKey={dataKey} />
-        </div>
-      </div>
+      <MainSummarySection dataKey={dataKey} />
 
-      <div className={styles.contentRow}>
-        <h2 className={styles.sectionsHeadings}>Appointments</h2>
-        <AppointmentsSection ageKey={dataKey} />
-      </div>
-      <div className={styles.contentRow}>
-        <h2>Interactive Links/Buttons</h2>
-        <p>Potential space for accordian, tabs, buttons etc.</p>
-      </div>
-      <LinkButton link={'/'} disabled={false} text={'Update Your Info'} />
+      <HealthMarkers ageKey={dataKey} />
+
+      <AppointmentsSection ageKey={dataKey} />
+
+      {/* <LinkButton link={'/'} disabled={false} text={'Update Your Info'} /> */}
+      <Footer />
     </div>
   )
 }

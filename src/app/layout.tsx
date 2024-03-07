@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Health Checklist',
-  description: 'Take control of your health! Health and Fitness are not complicated.',
+  description:
+    'Take control of your health! Health and Fitness are not complicated.',
 }
 
 export default function RootLayout({

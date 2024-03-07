@@ -6,8 +6,9 @@ import MarkerCard from './MarkerCard'
 
 const MarkerList = ({ data, ageKey }: any) => {
   return (
-    <>
-      <div className={styles.listContent}>
+    <div className="bg-white shadow-inner shadow-zinc-400 rounded-md flex flex-col gap-2 p-2 w-[100%] my-2">
+      <p className="p-2 font-sans">{data.overview}</p>
+      <div className="">
         {data.markers.map((item, i) => {
           return (
             <div key={i}>
@@ -16,7 +17,7 @@ const MarkerList = ({ data, ageKey }: any) => {
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
