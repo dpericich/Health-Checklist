@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Arial'],
+      serif: ['Play'],
     },
   },
   plugins: [daisyui],

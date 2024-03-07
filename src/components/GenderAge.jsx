@@ -8,11 +8,11 @@ const GenderAge = ({ ageKey }) => {
   const age = params.slice(1).join(',').replace(',', '-')
 
   return (
-    <div className="flex flex-col justify-center items-center text-xl text-white w-[100%] md:text-3xl">
-      <p className="text-4xl">Results</p>
-      <p style={{ fontFamily: 'Verdana', fontSize: '16pt' }}>
+    <div className="flex flex-col justify-center items-center text-white w-[100%] font-sans">
+      <p className="text-4xl font-serif font-extrabold">YOUR RESULTS</p>
+      {/* <p className="font-sans text-xl">
         {gender}, {age} years old
-      </p>
+      </p> */}
     </div>
   )
 }

@@ -46,28 +46,31 @@ const MarkerModal = ({ openMarker, onClose, item }: any) => {
   })
 
   return (
-    // <div className={styles.modalContainer}>
     <div
-      className={`fixed inset-0 m-10 mt-20 max-h-[70%] flex flex-col justify-center items-center rounded-md shadow-md p-2 transition-colors ${
-        openMarker ? 'visible bg-gray-200 z-50' : 'invisible'
+      className={`fixed inset-0 flex flex-col justify-center items-center transition-colors ${
+        openMarker ? 'visible bg-black bg-opacity-80' : 'invisible'
       }`}
     >
-      <div className="flex gap-2 items-center text-3xl md:text-7xl my-10">
-        {iconMappings[`${item.type}`]}
+      <div className="flex flex-col items-center h-10/12 w-[90%] md:w-[60%] border-8 border-white bg-zinc-200 rounded-xl shadow-inner shadow-zinc-500 pb-10">
+        <div className="flex justify-center items-center bg-blue-950 w-[100%]">
+          <div className="flex gap-2 items-center text-3xl md:text-7xl my-10 text-orange-500">
+            {iconMappings[`${item.type}`]}
 
-        <span className="text-2xl md:text-5xl">{item.name}</span>
-      </div>
-      <div className="flex flex-col items-center h-10/12 overflow-y-scroll bg-gray-100 shadow-inner shadow-gray-500 rounded-md py-10">
+            <span className="text-2xl md:text-5xl font-serif text-white">
+              {item.name}
+            </span>
+          </div>
+        </div>
         {item.aboveAverage ? (
-          <div className="border-4 w-3/4">
+          <div className="bg-white w-3/4 mt-4 shadow-md">
             <BarChart chartData={data} />
           </div>
         ) : (
           <div className="flex flex-col justify-center items-center my-4 bg-white shadow-inner shadow-gray-300 rounded-md p-2 w-[80%] md:w-[50%]">
-            <h1 className="text-xl font-sans">Average</h1>
+            <h1 className="text-xl font-serif font-bold">Average</h1>
 
             {/* ------- CHART / AVERAGE ---------------------- */}
-            <div className="font-sans text-lg md:text-2xl">
+            <div className="font-sans text-lg md:text-2xl text-zinc-500">
               {item.average} {item.units}
             </div>
           </div>
@@ -91,7 +94,7 @@ const MarkerModal = ({ openMarker, onClose, item }: any) => {
         )}
       </div>
       <button
-        className="absolute top-5 right-5 btn btn-sm btn-neutral w-[40px] text-white transition ease-in-out delay-25 hover:scale-105 font-sans"
+        className="absolute top-5 right-5 btn btn-sm border-none bg-orange-500 w-[40px] text-white transition ease-in-out delay-25 hover:scale-105 font-sans"
         onClick={onClose}
       >
         X
